@@ -1,5 +1,5 @@
 //
-//  CarListViewController.swift
+//  CarAddViewController.swift
 //  CarList
 //
 //  Created by Vlad Che on 11/30/17.
@@ -8,10 +8,10 @@
 
 import UIKit
 
-class CarListViewController: UIViewController {
+class CarAddViewController: UIViewController {
     
     // MARK: - Lifecycle -
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
