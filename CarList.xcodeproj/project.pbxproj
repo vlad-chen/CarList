@@ -1,0 +1,749 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DA4D1CB01FCB231C00000418 /* SkyWellProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4D1CAF1FCB231C00000418 /* SkyWellProjectTests.swift */; };
+		DA4D1CBB1FCB231C00000418 /* SkyWellProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4D1CBA1FCB231C00000418 /* SkyWellProjectUITests.swift */; };
+		DAE7BE481FD0590600479BB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7BE211FD0590500479BB2 /* AppDelegate.swift */; };
+		DAE7BE491FD0590600479BB2 /* UIFont+AppFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7BE231FD0590600479BB2 /* UIFont+AppFonts.swift */; };
+		DAE7BE4A1FD0590600479BB2 /* UIAlertController+Showing.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7BE241FD0590600479BB2 /* UIAlertController+Showing.swift */; };
+		DAE7BE4B1FD0590600479BB2 /* UIViewController+TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7BE251FD0590600479BB2 /* UIViewController+TopViewController.swift */; };
+		DAE7BE4C1FD0590600479BB2 /* UIColor+AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7BE261FD0590600479BB2 /* UIColor+AppColors.swift */; };
+		DAE7BE4D1FD0590600479BB2 /* URL+Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7BE271FD0590600479BB2 /* URL+Query.swift */; };
+		DAE7BE4E1FD0590600479BB2 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7BE2E1FD0590600479BB2 /* NetworkManager.swift */; };
+		DAE7BE4F1FD0590600479BB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAE7BE301FD0590600479BB2 /* LaunchScreen.storyboard */; };
+		DAE7BE501FD0590600479BB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAE7BE311FD0590600479BB2 /* Assets.xcassets */; };
+		DAE7BE511FD0590600479BB2 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DAE7BE321FD0590600479BB2 /* Info.plist */; };
+		DAE7BE521FD0590600479BB2 /* CarListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7BE351FD0590600479BB2 /* CarListViewModel.swift */; };
+		DAE7BE531FD0590600479BB2 /* CarListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7BE361FD0590600479BB2 /* CarListViewController.swift */; };
+		DAE7BE541FD0590600479BB2 /* CarListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7BE371FD0590600479BB2 /* CarListModel.swift */; };
+		DAE7BE551FD0590600479BB2 /* Car.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAE7BE411FD0590600479BB2 /* Car.storyboard */; };
+		DAE7BE561FD0590600479BB2 /* AppFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7BE451FD0590600479BB2 /* AppFlowCoordinator.swift */; };
+		DAE7BE571FD0590600479BB2 /* CarFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7BE461FD0590600479BB2 /* CarFlowCoordinator.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DA4D1CAC1FCB231C00000418 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA4D1C8F1FCB231B00000418 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA4D1C961FCB231C00000418;
+			remoteInfo = SkyWellProject;
+		};
+		DA4D1CB71FCB231C00000418 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA4D1C8F1FCB231B00000418 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA4D1C961FCB231C00000418;
+			remoteInfo = SkyWellProject;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DA4D1C971FCB231C00000418 /* CarList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA4D1CAB1FCB231C00000418 /* CarListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA4D1CAF1FCB231C00000418 /* SkyWellProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyWellProjectTests.swift; sourceTree = "<group>"; };
+		DA4D1CB11FCB231C00000418 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA4D1CB61FCB231C00000418 /* CarListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA4D1CBA1FCB231C00000418 /* SkyWellProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyWellProjectUITests.swift; sourceTree = "<group>"; };
+		DA4D1CBC1FCB231C00000418 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAE7BE211FD0590500479BB2 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DAE7BE231FD0590600479BB2 /* UIFont+AppFonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+AppFonts.swift"; sourceTree = "<group>"; };
+		DAE7BE241FD0590600479BB2 /* UIAlertController+Showing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Showing.swift"; sourceTree = "<group>"; };
+		DAE7BE251FD0590600479BB2 /* UIViewController+TopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+TopViewController.swift"; sourceTree = "<group>"; };
+		DAE7BE261FD0590600479BB2 /* UIColor+AppColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+AppColors.swift"; sourceTree = "<group>"; };
+		DAE7BE271FD0590600479BB2 /* URL+Query.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+Query.swift"; sourceTree = "<group>"; };
+		DAE7BE2E1FD0590600479BB2 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		DAE7BE301FD0590600479BB2 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DAE7BE311FD0590600479BB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DAE7BE321FD0590600479BB2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAE7BE351FD0590600479BB2 /* CarListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarListViewModel.swift; sourceTree = "<group>"; };
+		DAE7BE361FD0590600479BB2 /* CarListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarListViewController.swift; sourceTree = "<group>"; };
+		DAE7BE371FD0590600479BB2 /* CarListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarListModel.swift; sourceTree = "<group>"; };
+		DAE7BE411FD0590600479BB2 /* Car.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Car.storyboard; sourceTree = "<group>"; };
+		DAE7BE451FD0590600479BB2 /* AppFlowCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppFlowCoordinator.swift; sourceTree = "<group>"; };
+		DAE7BE461FD0590600479BB2 /* CarFlowCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarFlowCoordinator.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DA4D1C941FCB231C00000418 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA4D1CA81FCB231C00000418 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA4D1CB31FCB231C00000418 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DA4D1C8E1FCB231B00000418 = {
+			isa = PBXGroup;
+			children = (
+				DAE7BE201FD0590500479BB2 /* Application */,
+				DAE7BE441FD0590600479BB2 /* Coordinators */,
+				DAE7BE471FD0590600479BB2 /* CoreData */,
+				DAE7BE431FD0590600479BB2 /* Entities */,
+				DAE7BE221FD0590500479BB2 /* Extensions */,
+				DAE7BE2D1FD0590600479BB2 /* Networking */,
+				DAE7BE2F1FD0590600479BB2 /* Resourses */,
+				DAE7BE281FD0590600479BB2 /* Services */,
+				DAE7BE331FD0590600479BB2 /* UI */,
+				DA4D1CAE1FCB231C00000418 /* CarsListTests */,
+				DA4D1CB91FCB231C00000418 /* CarsListUITests */,
+				DA4D1C981FCB231C00000418 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DA4D1C981FCB231C00000418 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA4D1C971FCB231C00000418 /* CarList.app */,
+				DA4D1CAB1FCB231C00000418 /* CarListTests.xctest */,
+				DA4D1CB61FCB231C00000418 /* CarListUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA4D1CAE1FCB231C00000418 /* CarsListTests */ = {
+			isa = PBXGroup;
+			children = (
+				DA4D1CAF1FCB231C00000418 /* SkyWellProjectTests.swift */,
+				DA4D1CB11FCB231C00000418 /* Info.plist */,
+			);
+			path = CarsListTests;
+			sourceTree = "<group>";
+		};
+		DA4D1CB91FCB231C00000418 /* CarsListUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DA4D1CBA1FCB231C00000418 /* SkyWellProjectUITests.swift */,
+				DA4D1CBC1FCB231C00000418 /* Info.plist */,
+			);
+			path = CarsListUITests;
+			sourceTree = "<group>";
+		};
+		DAE7BE201FD0590500479BB2 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				DAE7BE211FD0590500479BB2 /* AppDelegate.swift */,
+			);
+			name = Application;
+			path = CarList/Application;
+			sourceTree = "<group>";
+		};
+		DAE7BE221FD0590500479BB2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DAE7BE231FD0590600479BB2 /* UIFont+AppFonts.swift */,
+				DAE7BE241FD0590600479BB2 /* UIAlertController+Showing.swift */,
+				DAE7BE251FD0590600479BB2 /* UIViewController+TopViewController.swift */,
+				DAE7BE261FD0590600479BB2 /* UIColor+AppColors.swift */,
+				DAE7BE271FD0590600479BB2 /* URL+Query.swift */,
+			);
+			name = Extensions;
+			path = CarList/Extensions;
+			sourceTree = "<group>";
+		};
+		DAE7BE281FD0590600479BB2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DAE7BE291FD0590600479BB2 /* CarListService */,
+				DAE7BE2A1FD0590600479BB2 /* CarAddService */,
+				DAE7BE2B1FD0590600479BB2 /* CarDetailsService */,
+				DAE7BE2C1FD0590600479BB2 /* WeatherService */,
+			);
+			name = Services;
+			path = CarList/Services;
+			sourceTree = "<group>";
+		};
+		DAE7BE291FD0590600479BB2 /* CarListService */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CarListService;
+			sourceTree = "<group>";
+		};
+		DAE7BE2A1FD0590600479BB2 /* CarAddService */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CarAddService;
+			sourceTree = "<group>";
+		};
+		DAE7BE2B1FD0590600479BB2 /* CarDetailsService */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CarDetailsService;
+			sourceTree = "<group>";
+		};
+		DAE7BE2C1FD0590600479BB2 /* WeatherService */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WeatherService;
+			sourceTree = "<group>";
+		};
+		DAE7BE2D1FD0590600479BB2 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				DAE7BE2E1FD0590600479BB2 /* NetworkManager.swift */,
+			);
+			name = Networking;
+			path = CarList/Networking;
+			sourceTree = "<group>";
+		};
+		DAE7BE2F1FD0590600479BB2 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				DAE7BE301FD0590600479BB2 /* LaunchScreen.storyboard */,
+				DAE7BE311FD0590600479BB2 /* Assets.xcassets */,
+				DAE7BE321FD0590600479BB2 /* Info.plist */,
+			);
+			name = Resourses;
+			path = CarList/Resourses;
+			sourceTree = "<group>";
+		};
+		DAE7BE331FD0590600479BB2 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				DAE7BE341FD0590600479BB2 /* CarList */,
+				DAE7BE381FD0590600479BB2 /* CarAdd */,
+				DAE7BE391FD0590600479BB2 /* Common UI */,
+				DAE7BE3F1FD0590600479BB2 /* WeatherInfo */,
+				DAE7BE401FD0590600479BB2 /* CarDetails */,
+				DAE7BE411FD0590600479BB2 /* Car.storyboard */,
+				DAE7BE421FD0590600479BB2 /* Common components */,
+			);
+			name = UI;
+			path = CarList/UI;
+			sourceTree = "<group>";
+		};
+		DAE7BE341FD0590600479BB2 /* CarList */ = {
+			isa = PBXGroup;
+			children = (
+				DAE7BE351FD0590600479BB2 /* CarListViewModel.swift */,
+				DAE7BE361FD0590600479BB2 /* CarListViewController.swift */,
+				DAE7BE371FD0590600479BB2 /* CarListModel.swift */,
+			);
+			path = CarList;
+			sourceTree = "<group>";
+		};
+		DAE7BE381FD0590600479BB2 /* CarAdd */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CarAdd;
+			sourceTree = "<group>";
+		};
+		DAE7BE391FD0590600479BB2 /* Common UI */ = {
+			isa = PBXGroup;
+			children = (
+				DAE7BE3A1FD0590600479BB2 /* Cells */,
+				DAE7BE3B1FD0590600479BB2 /* PhotoPicker */,
+				DAE7BE3C1FD0590600479BB2 /* NavigationBar */,
+				DAE7BE3D1FD0590600479BB2 /* TextPicker */,
+				DAE7BE3E1FD0590600479BB2 /* InfoView */,
+			);
+			path = "Common UI";
+			sourceTree = "<group>";
+		};
+		DAE7BE3A1FD0590600479BB2 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		DAE7BE3B1FD0590600479BB2 /* PhotoPicker */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PhotoPicker;
+			sourceTree = "<group>";
+		};
+		DAE7BE3C1FD0590600479BB2 /* NavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NavigationBar;
+			sourceTree = "<group>";
+		};
+		DAE7BE3D1FD0590600479BB2 /* TextPicker */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TextPicker;
+			sourceTree = "<group>";
+		};
+		DAE7BE3E1FD0590600479BB2 /* InfoView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = InfoView;
+			sourceTree = "<group>";
+		};
+		DAE7BE3F1FD0590600479BB2 /* WeatherInfo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WeatherInfo;
+			sourceTree = "<group>";
+		};
+		DAE7BE401FD0590600479BB2 /* CarDetails */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CarDetails;
+			sourceTree = "<group>";
+		};
+		DAE7BE421FD0590600479BB2 /* Common components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Common components";
+			sourceTree = "<group>";
+		};
+		DAE7BE431FD0590600479BB2 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Entities;
+			path = CarList/Entities;
+			sourceTree = "<group>";
+		};
+		DAE7BE441FD0590600479BB2 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				DAE7BE451FD0590600479BB2 /* AppFlowCoordinator.swift */,
+				DAE7BE461FD0590600479BB2 /* CarFlowCoordinator.swift */,
+			);
+			name = Coordinators;
+			path = CarList/Coordinators;
+			sourceTree = "<group>";
+		};
+		DAE7BE471FD0590600479BB2 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = CoreData;
+			path = CarList/CoreData;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DA4D1C961FCB231C00000418 /* CarList */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA4D1CBF1FCB231C00000418 /* Build configuration list for PBXNativeTarget "CarList" */;
+			buildPhases = (
+				DA4D1C931FCB231C00000418 /* Sources */,
+				DA4D1C941FCB231C00000418 /* Frameworks */,
+				DA4D1C951FCB231C00000418 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CarList;
+			productName = SkyWellProject;
+			productReference = DA4D1C971FCB231C00000418 /* CarList.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DA4D1CAA1FCB231C00000418 /* CarListTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA4D1CC21FCB231C00000418 /* Build configuration list for PBXNativeTarget "CarListTests" */;
+			buildPhases = (
+				DA4D1CA71FCB231C00000418 /* Sources */,
+				DA4D1CA81FCB231C00000418 /* Frameworks */,
+				DA4D1CA91FCB231C00000418 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA4D1CAD1FCB231C00000418 /* PBXTargetDependency */,
+			);
+			name = CarListTests;
+			productName = SkyWellProjectTests;
+			productReference = DA4D1CAB1FCB231C00000418 /* CarListTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DA4D1CB51FCB231C00000418 /* CarListUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA4D1CC51FCB231C00000418 /* Build configuration list for PBXNativeTarget "CarListUITests" */;
+			buildPhases = (
+				DA4D1CB21FCB231C00000418 /* Sources */,
+				DA4D1CB31FCB231C00000418 /* Frameworks */,
+				DA4D1CB41FCB231C00000418 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA4D1CB81FCB231C00000418 /* PBXTargetDependency */,
+			);
+			name = CarListUITests;
+			productName = SkyWellProjectUITests;
+			productReference = DA4D1CB61FCB231C00000418 /* CarListUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DA4D1C8F1FCB231B00000418 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Vlad Che";
+				TargetAttributes = {
+					DA4D1C961FCB231C00000418 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					DA4D1CAA1FCB231C00000418 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DA4D1C961FCB231C00000418;
+					};
+					DA4D1CB51FCB231C00000418 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DA4D1C961FCB231C00000418;
+					};
+				};
+			};
+			buildConfigurationList = DA4D1C921FCB231B00000418 /* Build configuration list for PBXProject "CarList" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DA4D1C8E1FCB231B00000418;
+			productRefGroup = DA4D1C981FCB231C00000418 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DA4D1C961FCB231C00000418 /* CarList */,
+				DA4D1CAA1FCB231C00000418 /* CarListTests */,
+				DA4D1CB51FCB231C00000418 /* CarListUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DA4D1C951FCB231C00000418 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAE7BE501FD0590600479BB2 /* Assets.xcassets in Resources */,
+				DAE7BE4F1FD0590600479BB2 /* LaunchScreen.storyboard in Resources */,
+				DAE7BE511FD0590600479BB2 /* Info.plist in Resources */,
+				DAE7BE551FD0590600479BB2 /* Car.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA4D1CA91FCB231C00000418 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA4D1CB41FCB231C00000418 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DA4D1C931FCB231C00000418 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAE7BE541FD0590600479BB2 /* CarListModel.swift in Sources */,
+				DAE7BE4A1FD0590600479BB2 /* UIAlertController+Showing.swift in Sources */,
+				DAE7BE4C1FD0590600479BB2 /* UIColor+AppColors.swift in Sources */,
+				DAE7BE4B1FD0590600479BB2 /* UIViewController+TopViewController.swift in Sources */,
+				DAE7BE4E1FD0590600479BB2 /* NetworkManager.swift in Sources */,
+				DAE7BE571FD0590600479BB2 /* CarFlowCoordinator.swift in Sources */,
+				DAE7BE531FD0590600479BB2 /* CarListViewController.swift in Sources */,
+				DAE7BE481FD0590600479BB2 /* AppDelegate.swift in Sources */,
+				DAE7BE4D1FD0590600479BB2 /* URL+Query.swift in Sources */,
+				DAE7BE491FD0590600479BB2 /* UIFont+AppFonts.swift in Sources */,
+				DAE7BE561FD0590600479BB2 /* AppFlowCoordinator.swift in Sources */,
+				DAE7BE521FD0590600479BB2 /* CarListViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA4D1CA71FCB231C00000418 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA4D1CB01FCB231C00000418 /* SkyWellProjectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA4D1CB21FCB231C00000418 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA4D1CBB1FCB231C00000418 /* SkyWellProjectUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DA4D1CAD1FCB231C00000418 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA4D1C961FCB231C00000418 /* CarList */;
+			targetProxy = DA4D1CAC1FCB231C00000418 /* PBXContainerItemProxy */;
+		};
+		DA4D1CB81FCB231C00000418 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA4D1C961FCB231C00000418 /* CarList */;
+			targetProxy = DA4D1CB71FCB231C00000418 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DA4D1CBD1FCB231C00000418 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DA4D1CBE1FCB231C00000418 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DA4D1CC01FCB231C00000418 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CarList/Resourses/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = vlad.che.carlist;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		DA4D1CC11FCB231C00000418 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CarList/Resourses/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = vlad.che.carlist;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		DA4D1CC31FCB231C00000418 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SkyWellProjectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = vlad.che.SkyWellProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CarList.app/CarList";
+			};
+			name = Debug;
+		};
+		DA4D1CC41FCB231C00000418 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SkyWellProjectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = vlad.che.SkyWellProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CarList.app/CarList";
+			};
+			name = Release;
+		};
+		DA4D1CC61FCB231C00000418 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = SkyWellProjectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = vlad.che.SkyWellProjectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = SkyWellProject;
+			};
+			name = Debug;
+		};
+		DA4D1CC71FCB231C00000418 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = SkyWellProjectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = vlad.che.SkyWellProjectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = SkyWellProject;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DA4D1C921FCB231B00000418 /* Build configuration list for PBXProject "CarList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA4D1CBD1FCB231C00000418 /* Debug */,
+				DA4D1CBE1FCB231C00000418 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA4D1CBF1FCB231C00000418 /* Build configuration list for PBXNativeTarget "CarList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA4D1CC01FCB231C00000418 /* Debug */,
+				DA4D1CC11FCB231C00000418 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA4D1CC21FCB231C00000418 /* Build configuration list for PBXNativeTarget "CarListTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA4D1CC31FCB231C00000418 /* Debug */,
+				DA4D1CC41FCB231C00000418 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA4D1CC51FCB231C00000418 /* Build configuration list for PBXNativeTarget "CarListUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA4D1CC61FCB231C00000418 /* Debug */,
+				DA4D1CC71FCB231C00000418 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DA4D1C8F1FCB231B00000418 /* Project object */;
+}
