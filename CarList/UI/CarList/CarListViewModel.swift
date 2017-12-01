@@ -8,6 +8,12 @@
 
 import Foundation
 
-class CarListViewModel {
+extension CarListViewModel: CarListViewModelProtocol {
+    func doSmth(){
+        
+    }
+}
+
+class CarListViewModel: ViewModel<CarListModel> {
     
 }

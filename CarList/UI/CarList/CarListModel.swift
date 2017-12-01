@@ -7,3 +7,18 @@
 //
 
 import Foundation
+
+extension CarListModel: CarListModelProtocol {
+    
+}
+
+class CarListModel: Model<CarListProvider> {
+    
+    // MARK: - Private -
+    var page: Int = 0
+    
+    private func getList() {
+        
+    }
+    
+}

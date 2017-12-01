@@ -8,12 +8,15 @@
 
 import UIKit
 
-class CarListViewController: UIViewController {
+class CarListViewController: View<CarListViewModel, CarListCoordinator> {
     
     // MARK: - Lifecycle -
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        viewModel.doSmth()
     }
+    
+    // MARK: - Private -
     
 }
