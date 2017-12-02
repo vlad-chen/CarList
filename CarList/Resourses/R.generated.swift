@@ -530,13 +530,24 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.nib` struct is generated, and contains static references to 0 nibs.
+  /// This `R.nib` struct is generated, and contains static references to 1 nibs.
   struct nib {
+    /// Nib `CarListCell`.
+    static let carListCell = _R.nib._CarListCell()
+    
+    /// `UINib(name: "CarListCell", in: bundle)`
+    static func carListCell(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.carListCell)
+    }
+    
     fileprivate init() {}
   }
   
-  /// This `R.reuseIdentifier` struct is generated, and contains static references to 0 reuse identifiers.
+  /// This `R.reuseIdentifier` struct is generated, and contains static references to 1 reuse identifiers.
   struct reuseIdentifier {
+    /// Reuse identifier `CarListCell`.
+    static let carListCell: Rswift.ReuseIdentifier<CarListCell> = Rswift.ReuseIdentifier(identifier: "CarListCell")
+    
     fileprivate init() {}
   }
   
@@ -598,8 +609,18 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.string` struct is generated, and contains static references to 0 localization tables.
+  /// This `R.string` struct is generated, and contains static references to 2 localization tables.
   struct string {
+    /// This `R.string.launchScreen` struct is generated, and contains static references to 0 localization keys.
+    struct launchScreen {
+      fileprivate init() {}
+    }
+    
+    /// This `R.string.localizable` struct is generated, and contains static references to 0 localization keys.
+    struct localizable {
+      fileprivate init() {}
+    }
+    
     fileprivate init() {}
   }
   
@@ -622,6 +643,20 @@ struct _R: Rswift.Validatable {
   }
   
   struct nib {
+    struct _CarListCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType {
+      typealias ReusableType = CarListCell
+      
+      let bundle = R.hostingBundle
+      let identifier = "CarListCell"
+      let name = "CarListCell"
+      
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> CarListCell? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? CarListCell
+      }
+      
+      fileprivate init() {}
+    }
+    
     fileprivate init() {}
   }
   

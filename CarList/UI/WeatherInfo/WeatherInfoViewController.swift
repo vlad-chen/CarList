@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WeatherInfoViewController: UIViewController {
+class WeatherInfoViewController: View<WeatherInfoViewModel, WeatherInfoCoordinator> {
     
     // MARK: - Lifecycle -
     

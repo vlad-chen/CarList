@@ -48,14 +48,23 @@
 		DA727EA61FD162A100C896E4 /* CarListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA727EA51FD162A100C896E4 /* CarListService.swift */; };
 		DA727EA81FD173B600C896E4 /* CarListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA727EA71FD173B600C896E4 /* CarListProtocols.swift */; };
 		DA727EAF1FD1825100C896E4 /* BaseClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA727EAE1FD1825100C896E4 /* BaseClasses.swift */; };
+		DA727EB11FD194E400C896E4 /* WeatherInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA727EB01FD194E400C896E4 /* WeatherInfoViewModel.swift */; };
+		DA727EB31FD194FF00C896E4 /* WeatherInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA727EB21FD194FF00C896E4 /* WeatherInfoModel.swift */; };
+		DA727EB51FD1953000C896E4 /* WeatherInfoProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA727EB41FD1953000C896E4 /* WeatherInfoProtocols.swift */; };
+		DA727EB71FD1969B00C896E4 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA727EB61FD1969B00C896E4 /* WeatherService.swift */; };
+		DA727EB91FD197F700C896E4 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA727EB81FD197F700C896E4 /* LocationService.swift */; };
+		DA727EBB1FD1B3B200C896E4 /* WeatherInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA727EBA1FD1B3B200C896E4 /* WeatherInfo.swift */; };
+		DA727EBE1FD2A3A400C896E4 /* CarListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA727EBC1FD2A3A400C896E4 /* CarListCell.swift */; };
+		DA727EBF1FD2A3A400C896E4 /* CarListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA727EBD1FD2A3A400C896E4 /* CarListCell.xib */; };
+		DA727EC11FD2B00300C896E4 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA727EC01FD2B00300C896E4 /* Error.swift */; };
+		DA727EC31FD2B04800C896E4 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA727EC21FD2B04800C896E4 /* Font.swift */; };
+		DA727EC71FD2B3A100C896E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA727EC51FD2B3A100C896E4 /* LaunchScreen.storyboard */; };
+		DA727ECB1FD2B46200C896E4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA727ECD1FD2B46200C896E4 /* Localizable.strings */; };
 		DAE7BE481FD0590600479BB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7BE211FD0590500479BB2 /* AppDelegate.swift */; };
-		DAE7BE491FD0590600479BB2 /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7BE231FD0590600479BB2 /* FontExtension.swift */; };
-		DAE7BE4A1FD0590600479BB2 /* UIAlertController+Showing.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7BE241FD0590600479BB2 /* UIAlertController+Showing.swift */; };
-		DAE7BE4B1FD0590600479BB2 /* UIViewController+TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7BE251FD0590600479BB2 /* UIViewController+TopViewController.swift */; };
+		DAE7BE4A1FD0590600479BB2 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7BE241FD0590600479BB2 /* AlertController.swift */; };
 		DAE7BE4C1FD0590600479BB2 /* UIColor+AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7BE261FD0590600479BB2 /* UIColor+AppColors.swift */; };
 		DAE7BE4D1FD0590600479BB2 /* URL+Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7BE271FD0590600479BB2 /* URL+Query.swift */; };
 		DAE7BE4E1FD0590600479BB2 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7BE2E1FD0590600479BB2 /* NetworkManager.swift */; };
-		DAE7BE4F1FD0590600479BB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAE7BE301FD0590600479BB2 /* LaunchScreen.storyboard */; };
 		DAE7BE501FD0590600479BB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAE7BE311FD0590600479BB2 /* Assets.xcassets */; };
 		DAE7BE511FD0590600479BB2 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DAE7BE321FD0590600479BB2 /* Info.plist */; };
 		DAE7BE521FD0590600479BB2 /* CarListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7BE351FD0590600479BB2 /* CarListViewModel.swift */; };
@@ -134,14 +143,25 @@
 		DA727EA51FD162A100C896E4 /* CarListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListService.swift; sourceTree = "<group>"; };
 		DA727EA71FD173B600C896E4 /* CarListProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListProtocols.swift; sourceTree = "<group>"; };
 		DA727EAE1FD1825100C896E4 /* BaseClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseClasses.swift; sourceTree = "<group>"; };
+		DA727EB01FD194E400C896E4 /* WeatherInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInfoViewModel.swift; sourceTree = "<group>"; };
+		DA727EB21FD194FF00C896E4 /* WeatherInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInfoModel.swift; sourceTree = "<group>"; };
+		DA727EB41FD1953000C896E4 /* WeatherInfoProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInfoProtocols.swift; sourceTree = "<group>"; };
+		DA727EB61FD1969B00C896E4 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		DA727EB81FD197F700C896E4 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		DA727EBA1FD1B3B200C896E4 /* WeatherInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInfo.swift; sourceTree = "<group>"; };
+		DA727EBC1FD2A3A400C896E4 /* CarListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListCell.swift; sourceTree = "<group>"; };
+		DA727EBD1FD2A3A400C896E4 /* CarListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarListCell.xib; sourceTree = "<group>"; };
+		DA727EC01FD2B00300C896E4 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		DA727EC21FD2B04800C896E4 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		DA727EC61FD2B3A100C896E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DA727EC81FD2B3DF00C896E4 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ../ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		DA727ECE1FD2B46800C896E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DA727ED01FD2B48B00C896E4 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DAE7BE211FD0590500479BB2 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DAE7BE231FD0590600479BB2 /* FontExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontExtension.swift; sourceTree = "<group>"; };
-		DAE7BE241FD0590600479BB2 /* UIAlertController+Showing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Showing.swift"; sourceTree = "<group>"; };
-		DAE7BE251FD0590600479BB2 /* UIViewController+TopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+TopViewController.swift"; sourceTree = "<group>"; };
+		DAE7BE241FD0590600479BB2 /* AlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
 		DAE7BE261FD0590600479BB2 /* UIColor+AppColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+AppColors.swift"; sourceTree = "<group>"; };
 		DAE7BE271FD0590600479BB2 /* URL+Query.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+Query.swift"; sourceTree = "<group>"; };
 		DAE7BE2E1FD0590600479BB2 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		DAE7BE301FD0590600479BB2 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DAE7BE311FD0590600479BB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAE7BE321FD0590600479BB2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAE7BE351FD0590600479BB2 /* CarListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarListViewModel.swift; sourceTree = "<group>"; };
@@ -288,10 +308,21 @@
 		DA727EAD1FD1823500C896E4 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				DAE7BE241FD0590600479BB2 /* AlertController.swift */,
 				DA727EAE1FD1825100C896E4 /* BaseClasses.swift */,
+				DA727EC01FD2B00300C896E4 /* Error.swift */,
+				DA727EC21FD2B04800C896E4 /* Font.swift */,
 			);
 			path = Common;
 			sourceTree = SOURCE_ROOT;
+		};
+		DA727EC41FD2B3A100C896E4 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				DA727EC51FD2B3A100C896E4 /* LaunchScreen.storyboard */,
+			);
+			path = Base.lproj;
+			sourceTree = "<group>";
 		};
 		DAE7BE201FD0590500479BB2 /* Application */ = {
 			isa = PBXGroup;
@@ -305,9 +336,6 @@
 		DAE7BE221FD0590500479BB2 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				DAE7BE231FD0590600479BB2 /* FontExtension.swift */,
-				DAE7BE241FD0590600479BB2 /* UIAlertController+Showing.swift */,
-				DAE7BE251FD0590600479BB2 /* UIViewController+TopViewController.swift */,
 				DAE7BE261FD0590600479BB2 /* UIColor+AppColors.swift */,
 				DAE7BE271FD0590600479BB2 /* URL+Query.swift */,
 			);
@@ -318,42 +346,12 @@
 		DAE7BE281FD0590600479BB2 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				DAE7BE291FD0590600479BB2 /* CarListService */,
-				DAE7BE2A1FD0590600479BB2 /* CarAddService */,
-				DAE7BE2B1FD0590600479BB2 /* CarDetailsService */,
-				DAE7BE2C1FD0590600479BB2 /* WeatherService */,
 				DA727EA51FD162A100C896E4 /* CarListService.swift */,
+				DA727EB61FD1969B00C896E4 /* WeatherService.swift */,
+				DA727EB81FD197F700C896E4 /* LocationService.swift */,
 			);
 			name = Services;
 			path = CarList/Services;
-			sourceTree = "<group>";
-		};
-		DAE7BE291FD0590600479BB2 /* CarListService */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CarListService;
-			sourceTree = "<group>";
-		};
-		DAE7BE2A1FD0590600479BB2 /* CarAddService */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CarAddService;
-			sourceTree = "<group>";
-		};
-		DAE7BE2B1FD0590600479BB2 /* CarDetailsService */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CarDetailsService;
-			sourceTree = "<group>";
-		};
-		DAE7BE2C1FD0590600479BB2 /* WeatherService */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = WeatherService;
 			sourceTree = "<group>";
 		};
 		DAE7BE2D1FD0590600479BB2 /* Networking */ = {
@@ -368,11 +366,12 @@
 		DAE7BE2F1FD0590600479BB2 /* Resourses */ = {
 			isa = PBXGroup;
 			children = (
+				DA727EC41FD2B3A100C896E4 /* Base.lproj */,
 				DA727EA31FD15C7600C896E4 /* R.generated.swift */,
 				DA727E651FD099CD00C896E4 /* Fonts */,
-				DAE7BE301FD0590600479BB2 /* LaunchScreen.storyboard */,
 				DAE7BE311FD0590600479BB2 /* Assets.xcassets */,
 				DAE7BE321FD0590600479BB2 /* Info.plist */,
+				DA727ECD1FD2B46200C896E4 /* Localizable.strings */,
 			);
 			name = Resourses;
 			path = CarList/Resourses;
@@ -395,9 +394,9 @@
 		DAE7BE341FD0590600479BB2 /* CarList */ = {
 			isa = PBXGroup;
 			children = (
-				DAE7BE351FD0590600479BB2 /* CarListViewModel.swift */,
-				DAE7BE361FD0590600479BB2 /* CarListViewController.swift */,
 				DAE7BE371FD0590600479BB2 /* CarListModel.swift */,
+				DAE7BE361FD0590600479BB2 /* CarListViewController.swift */,
+				DAE7BE351FD0590600479BB2 /* CarListViewModel.swift */,
 				DA727EA71FD173B600C896E4 /* CarListProtocols.swift */,
 			);
 			path = CarList;
@@ -426,6 +425,8 @@
 		DAE7BE3A1FD0590600479BB2 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				DA727EBC1FD2A3A400C896E4 /* CarListCell.swift */,
+				DA727EBD1FD2A3A400C896E4 /* CarListCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -461,7 +462,10 @@
 		DAE7BE3F1FD0590600479BB2 /* WeatherInfo */ = {
 			isa = PBXGroup;
 			children = (
+				DA727EB21FD194FF00C896E4 /* WeatherInfoModel.swift */,
 				DA727E611FD0706200C896E4 /* WeatherInfoViewController.swift */,
+				DA727EB01FD194E400C896E4 /* WeatherInfoViewModel.swift */,
+				DA727EB41FD1953000C896E4 /* WeatherInfoProtocols.swift */,
 			);
 			path = WeatherInfo;
 			sourceTree = "<group>";
@@ -477,6 +481,7 @@
 		DAE7BE431FD0590600479BB2 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				DA727EBA1FD1B3B200C896E4 /* WeatherInfo.swift */,
 			);
 			name = Entities;
 			path = CarList/Entities;
@@ -595,6 +600,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = DA4D1C8E1FCB231B00000418;
 			productRefGroup = DA4D1C981FCB231C00000418 /* Products */;
@@ -626,14 +632,16 @@
 				DA727EA11FD099CD00C896E4 /* SF-Pro-Text-SemiboldItalic.otf in Resources */,
 				DA727E971FD099CD00C896E4 /* SF-Pro-Display-BlackItalic.otf in Resources */,
 				DA727E951FD099CD00C896E4 /* SF-Pro-Display-UltralightItalic.otf in Resources */,
+				DA727ECB1FD2B46200C896E4 /* Localizable.strings in Resources */,
 				DA727E881FD099CD00C896E4 /* SF-Pro-Display-Light.otf in Resources */,
 				DA727E871FD099CD00C896E4 /* SF-Pro-Display-RegularItalic.otf in Resources */,
 				DA727E941FD099CD00C896E4 /* SF-Pro-Display-Ultralight.otf in Resources */,
 				DA727E911FD099CD00C896E4 /* SF-Pro-Text-Bold.otf in Resources */,
 				DA727E8F1FD099CD00C896E4 /* SF-Pro-Display-Semibold.otf in Resources */,
+				DA727EC71FD2B3A100C896E4 /* LaunchScreen.storyboard in Resources */,
+				DA727EBF1FD2A3A400C896E4 /* CarListCell.xib in Resources */,
 				DA727E9E1FD099CD00C896E4 /* SF-Pro-Text-LightItalic.otf in Resources */,
 				DA727EA01FD099CD00C896E4 /* SF-Pro-Display-BoldItalic.otf in Resources */,
-				DAE7BE4F1FD0590600479BB2 /* LaunchScreen.storyboard in Resources */,
 				DA727E8D1FD099CD00C896E4 /* SF-Pro-Display-Heavy.otf in Resources */,
 				DA727E8A1FD099CD00C896E4 /* SF-Pro-Text-MediumItalic.otf in Resources */,
 				DAE7BE511FD0590600479BB2 /* Info.plist in Resources */,
@@ -754,7 +762,9 @@
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwiftExt/RxSwiftExt.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftMessages/SwiftMessages.framework",
+				"${BUILT_PRODUCTS_DIR}/Unbox/Unbox.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -768,7 +778,9 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwiftExt.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftMessages.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Unbox.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -813,24 +825,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA727EB51FD1953000C896E4 /* WeatherInfoProtocols.swift in Sources */,
 				DAE7BE541FD0590600479BB2 /* CarListModel.swift in Sources */,
-				DAE7BE4A1FD0590600479BB2 /* UIAlertController+Showing.swift in Sources */,
+				DAE7BE4A1FD0590600479BB2 /* AlertController.swift in Sources */,
 				DA727EA61FD162A100C896E4 /* CarListService.swift in Sources */,
 				DAE7BE4C1FD0590600479BB2 /* UIColor+AppColors.swift in Sources */,
-				DAE7BE4B1FD0590600479BB2 /* UIViewController+TopViewController.swift in Sources */,
+				DA727EB71FD1969B00C896E4 /* WeatherService.swift in Sources */,
+				DA727EC11FD2B00300C896E4 /* Error.swift in Sources */,
+				DA727EB11FD194E400C896E4 /* WeatherInfoViewModel.swift in Sources */,
 				DAE7BE4E1FD0590600479BB2 /* NetworkManager.swift in Sources */,
 				DA727EAF1FD1825100C896E4 /* BaseClasses.swift in Sources */,
+				DA727EB91FD197F700C896E4 /* LocationService.swift in Sources */,
 				DAE7BE571FD0590600479BB2 /* CarFlowCoordinator.swift in Sources */,
 				DAE7BE531FD0590600479BB2 /* CarListViewController.swift in Sources */,
 				DAE7BE481FD0590600479BB2 /* AppDelegate.swift in Sources */,
 				DAE7BE4D1FD0590600479BB2 /* URL+Query.swift in Sources */,
 				DA727E621FD0706200C896E4 /* WeatherInfoViewController.swift in Sources */,
-				DAE7BE491FD0590600479BB2 /* FontExtension.swift in Sources */,
 				DA727EA41FD15C7600C896E4 /* R.generated.swift in Sources */,
+				DA727EBE1FD2A3A400C896E4 /* CarListCell.swift in Sources */,
+				DA727EB31FD194FF00C896E4 /* WeatherInfoModel.swift in Sources */,
 				DA727E641FD0708600C896E4 /* CarDetailsViewController.swift in Sources */,
 				DAE7BE561FD0590600479BB2 /* AppFlowCoordinator.swift in Sources */,
 				DAE7BE521FD0590600479BB2 /* CarListViewModel.swift in Sources */,
+				DA727EC31FD2B04800C896E4 /* Font.swift in Sources */,
 				DA727EA81FD173B600C896E4 /* CarListProtocols.swift in Sources */,
+				DA727EBB1FD1B3B200C896E4 /* WeatherInfo.swift in Sources */,
 				DA727E601FD0703100C896E4 /* CarAddViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -866,11 +885,33 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		DA727EC51FD2B3A100C896E4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA727EC61FD2B3A100C896E4 /* Base */,
+				DA727EC81FD2B3DF00C896E4 /* ru */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		DA727ECD1FD2B46200C896E4 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA727ECE1FD2B46800C896E4 /* Base */,
+				DA727ED01FD2B48B00C896E4 /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		DA4D1CBD1FCB231C00000418 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -922,6 +963,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";

@@ -8,7 +8,11 @@
 
 import UIKit
 
-class AppFlowCoordinator {
+protocol Coordinator {
+    var topViewController: UIViewController {get}
+}
+
+class AppFlowCoordinator: Coordinator {
     
     // MARK: - Singletone -
 
@@ -16,18 +20,27 @@ class AppFlowCoordinator {
     private init() {}
     
     // MARK: - Public -
+    var topViewController: UIViewController {
+        if activeCoordinator is AppFlowCoordinator {
+            guard let window = window, let rootViewController = window.rootViewController
+                else { fatalError("No window or root view controller")}
+            return rootViewController
+        } else {
+            return activeCoordinator.topViewController            
+        }
+    }
 
     func setup(with window: UIWindow) {
         let navigationController = UINavigationController()
-        carFlowCoordinator = CarFlowCoordinator(with: navigationController)
+        let carFlowCoordinator = CarFlowCoordinator(with: navigationController)
+        activeCoordinator = carFlowCoordinator
         window.rootViewController = navigationController
         window.makeKeyAndVisible()
         self.window = window
     }
     
     // MARK: - Private -
-
     private var window: UIWindow?
-    private var carFlowCoordinator: CarFlowCoordinator?
+    private lazy var activeCoordinator: Coordinator = self
     
 }

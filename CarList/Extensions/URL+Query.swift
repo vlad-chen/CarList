@@ -10,13 +10,12 @@ import Foundation
 
 extension URL {
     var queryParams: [String: String] {
+        guard let pairs = self.query?.components(separatedBy: "&"), pairs.count > 0 else { return [:] }
         var results = [String: String]()
-        if let pairs = self.query?.components(separatedBy: "&"), pairs.count > 0 {
-            for pair: String in pairs {
-                if let keyValue = pair.components(separatedBy:"=") as [String]? {
-                    results.updateValue(keyValue[1], forKey: keyValue[0])
-                }
-            }
+        for pair in pairs {
+            let components = pair.components(separatedBy:"=")
+            guard components.count > 1, let key = components.first, let value = components.last else { continue }
+            results.updateValue(value, forKey: key)
         }
         return results
     }
