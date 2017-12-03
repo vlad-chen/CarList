@@ -8,10 +8,6 @@
 
 import Foundation
 
-extension CarListService: CarListProvider {
-    
-}
+extension CarListService: CarListProvider {}
 
-class CarListService {
-    
-}
+class CarListService {}

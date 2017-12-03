@@ -1,0 +1,25 @@
+# Template information section
+name: "MVVM"
+summary: "MVVM module"
+author: "Vlad Che"
+version: "0.1"
+license: "MIT"
+
+# The declarations for code files
+
+code_files:
+
+# Model 
+- {name: Model.swift, path: Code/model.swift.liquid}
+
+# View 
+- {name: ViewController.swift,  path: Code/viewcontroller.swift.liquid}
+
+# View Model 
+- {name: ViewModel.swift, path: Code/viewmodel.swift.liquid}
+
+# Protocols
+- {name: Protocols.swift, path: Code/protocols.swift.liquid}
+
+
+test_files:

@@ -6,7 +6,7 @@
 //  Copyright © 2017 Vlad Che. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 protocol CarListProvider {
     
@@ -15,8 +15,5 @@ protocol CarListProvider {
 protocol CarListCoordinator {
     func addCar()
     func showDetails()
+    func embedWeatherInfo(in view: UIView)
 }
-
-protocol CarListViewModelProtocol { }
-
-protocol CarListModelProtocol { }

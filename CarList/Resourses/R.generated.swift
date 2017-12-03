@@ -525,8 +525,16 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.image` struct is generated, and contains static references to 0 images.
+  /// This `R.image` struct is generated, and contains static references to 1 images.
   struct image {
+    /// Image `weather.back`.
+    static let weatherBack = Rswift.ImageResource(bundle: R.hostingBundle, name: "weather.back")
+    
+    /// `UIImage(named: "weather.back", bundle: ..., traitCollection: ...)`
+    static func weatherBack(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.weatherBack, compatibleWith: traitCollection)
+    }
+    
     fileprivate init() {}
   }
   
@@ -690,6 +698,7 @@ struct _R: Rswift.Validatable {
       }
       
       static func validate() throws {
+        if UIKit.UIImage(named: "weather.back") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'weather.back' is used in storyboard 'Car', but couldn't be loaded.") }
         if _R.storyboard.car().carDetailsViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'carDetailsViewController' could not be loaded from storyboard 'Car' as 'CarDetailsViewController'.") }
         if _R.storyboard.car().carListViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'carListViewController' could not be loaded from storyboard 'Car' as 'CarListViewController'.") }
         if _R.storyboard.car().weatherInfoViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'weatherInfoViewController' could not be loaded from storyboard 'Car' as 'WeatherInfoViewController'.") }

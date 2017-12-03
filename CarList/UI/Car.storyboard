@@ -4,16 +4,10 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="HelveticaNeue.ttc">
-            <string>HelveticaNeue</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--Navigation Controller-->
         <scene sceneID="r6q-vd-gW5">
@@ -31,7 +25,7 @@
             </objects>
             <point key="canvasLocation" x="-476" y="161"/>
         </scene>
-        <!--Car List View Controller-->
+        <!--Car List-->
         <scene sceneID="WIp-W5-WAh">
             <objects>
                 <viewController storyboardIdentifier="CarListViewController" id="zcb-Xq-VhM" customClass="CarListViewController" customModule="CarList" customModuleProvider="target" sceneMemberID="viewController">
@@ -39,23 +33,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aX8-0d-Y1D">
-                                <rect key="frame" x="0.0" y="64" width="375" height="187"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                            </containerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EBi-B7-G4R">
-                                <rect key="frame" x="227" y="460" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4D3-tT-D7a">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <containerView key="tableFooterView" opaque="NO" contentMode="scaleToFill" id="aX8-0d-Y1D">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="200" id="gg5-kg-iGW"/>
+                                    </constraints>
+                                </containerView>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4D3-tT-D7a" firstAttribute="top" secondItem="bmc-3z-VxM" secondAttribute="top" id="Fz1-NL-WNZ"/>
+                            <constraint firstItem="4D3-tT-D7a" firstAttribute="leading" secondItem="bmc-3z-VxM" secondAttribute="leading" id="Uap-Lv-3db"/>
+                            <constraint firstItem="4D3-tT-D7a" firstAttribute="bottom" secondItem="bmc-3z-VxM" secondAttribute="bottom" id="lmD-0v-yDZ"/>
+                            <constraint firstItem="4D3-tT-D7a" firstAttribute="trailing" secondItem="bmc-3z-VxM" secondAttribute="trailing" id="waS-Mg-28R"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="bmc-3z-VxM"/>
                     </view>
-                    <navigationItem key="navigationItem" id="rtR-2S-5dB"/>
+                    <navigationItem key="navigationItem" title="Car List" id="rtR-2S-5dB">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="add" id="ghx-wU-ZS6">
+                            <connections>
+                                <action selector="addAction:" destination="zcb-Xq-VhM" id="qc3-Qh-25m"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="tableView" destination="4D3-tT-D7a" id="3vX-a1-Qfo"/>
+                        <outlet property="weatherView" destination="aX8-0d-Y1D" id="jVm-k8-ebF"/>
                         <segue destination="Htd-or-XdH" kind="show" identifier="show add" id="OI0-TL-Zrj"/>
                         <segue destination="XGW-20-UY5" kind="show" identifier="show details" id="NeK-qG-LQC"/>
                         <segue destination="1X2-yA-D90" kind="presentation" identifier="embed weather" id="Cbe-vq-vxx"/>
@@ -70,17 +78,54 @@
             <objects>
                 <viewController storyboardIdentifier="WeatherInfoViewController" id="1X2-yA-D90" customClass="WeatherInfoViewController" customModule="CarList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aoT-mJ-bNR">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="weather.back" translatesAutoresizingMaskIntoConstraints="NO" id="6hC-rJ-Xfy">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="re5-vv-8MT">
+                                <rect key="frame" x="139" y="64.5" width="98.5" height="72.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+15" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vwi-GR-1Jf">
+                                        <rect key="frame" x="0.0" y="0.0" width="98.5" height="31.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Без осадков" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahh-UY-q3h">
+                                        <rect key="frame" x="0.0" y="31.5" width="98.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Киев" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3O9-ed-gWx">
+                                        <rect key="frame" x="0.0" y="52" width="98.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="re5-vv-8MT" firstAttribute="centerY" secondItem="aoT-mJ-bNR" secondAttribute="centerY" id="AWf-fg-CX7"/>
+                            <constraint firstItem="re5-vv-8MT" firstAttribute="centerX" secondItem="aoT-mJ-bNR" secondAttribute="centerX" id="CRK-vC-PlZ"/>
+                            <constraint firstItem="6hC-rJ-Xfy" firstAttribute="leading" secondItem="aoT-mJ-bNR" secondAttribute="leading" id="MjW-3p-dZl"/>
+                            <constraint firstItem="nP5-p1-heY" firstAttribute="bottom" secondItem="6hC-rJ-Xfy" secondAttribute="bottom" id="Owa-dN-GC9"/>
+                            <constraint firstItem="6hC-rJ-Xfy" firstAttribute="top" secondItem="nP5-p1-heY" secondAttribute="top" id="Uew-c7-45s"/>
+                            <constraint firstItem="nP5-p1-heY" firstAttribute="trailing" secondItem="6hC-rJ-Xfy" secondAttribute="trailing" id="Yih-S0-vSr"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="nP5-p1-heY"/>
                     </view>
+                    <size key="freeformSize" width="375" height="200"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eIq-Ql-Tr7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1111" y="162"/>
+            <point key="canvasLocation" x="1077.5999999999999" y="8.0959520239880067"/>
         </scene>
-        <!--Car Details View Controller-->
+        <!--Details-->
         <scene sceneID="try-j8-Idg">
             <objects>
                 <viewController storyboardIdentifier="CarDetailsViewController" id="XGW-20-UY5" customClass="CarDetailsViewController" customModule="CarList" customModuleProvider="target" sceneMemberID="viewController">
@@ -90,12 +135,13 @@
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="xrl-fF-k35"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Details" id="xnM-PT-LXB"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ybl-Ja-4jv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="318" y="892"/>
         </scene>
-        <!--Car Add View Controller-->
+        <!--Title-->
         <scene sceneID="IYJ-Ec-xdq">
             <objects>
                 <viewController storyboardIdentifier="CarAddViewController" id="Htd-or-XdH" customClass="CarAddViewController" customModule="CarList" customModuleProvider="target" sceneMemberID="viewController">
@@ -105,10 +151,18 @@
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="VOa-nB-J2y"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="a4F-3X-2YX">
+                        <barButtonItem key="rightBarButtonItem" title="Add car" id="63b-t6-qIQ">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QrT-Wc-dPh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="318" y="-564"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="weather.back" width="1440" height="747"/>
+    </resources>
 </document>

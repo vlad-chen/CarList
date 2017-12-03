@@ -8,10 +8,6 @@
 
 import UIKit
 
-protocol Coordinator {
-    var topViewController: UIViewController {get}
-}
-
 class AppFlowCoordinator: Coordinator {
     
     // MARK: - Singletone -
