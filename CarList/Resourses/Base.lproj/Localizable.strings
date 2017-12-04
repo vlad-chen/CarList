@@ -42,3 +42,6 @@
 "car:details:transmission" = "Transmission:";
 "car:details:condition" = "Condition:";
 "car:details:description" = "Description:";
+
+//MARK: - Errors -
+"error.location.status" = "Please allow location tracking in settings";

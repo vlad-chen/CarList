@@ -10,22 +10,19 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-protocol DataModel {
-    func loadData()
-}
-
 class Model<Provider> {
     // MARK: - Init -
     required init(with provider: Provider) {
         self.provider = provider
-        if let model = self as? DataModel { model.loadData() }
     }
     // MARK: - Public -
+    let disposeBag = DisposeBag()
     let provider: Provider
 }
 
 class View<ViewModel, Coordinator>: UIViewController {
     // MARK: - Public -
+    let disposeBag = DisposeBag()
     var viewModel: ViewModel {
         set { _viewModel = newValue }
         get { return safeViewModel }
@@ -34,7 +31,6 @@ class View<ViewModel, Coordinator>: UIViewController {
         set { _coordinator = newValue }
         get { return safeCoordinator }
     }
-    let disposeBag = DisposeBag()
     
     // MARK: - Private -
     private var _viewModel: ViewModel?
@@ -57,5 +53,6 @@ class ViewModel<Model> {
         self.model = model
     }
     // MARK: - Public -
+    let disposeBag = DisposeBag()
     let model: Model
 }

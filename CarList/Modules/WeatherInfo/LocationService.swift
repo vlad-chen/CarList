@@ -16,7 +16,7 @@ enum LocationError: Swift.Error {
     case status
     var localizedDescription: String {
         switch self {
-        case .status: return "Please allow location tracking in settings"
+        case .status: return R.string.localizable.errorLocationStatus()
         }
     }
 }
@@ -49,6 +49,10 @@ class LocationService {
     private (set) var authorized: Driver<Bool>
     private (set) var location: Driver<Location>
     
+    var isAuthorized: Bool {
+        return CLLocationManager.authorizationStatus() == .authorizedWhenInUse
+    }
+    
     // MARK: - Init -
     
     init() {
@@ -64,14 +68,21 @@ class LocationService {
             .asDriver(onErrorJustReturn: CLAuthorizationStatus.notDetermined)
             .map {
                 switch $0 {
-                case .authorizedAlways: return true
+                case .authorizedWhenInUse: return true
                 default: return false
                 }
         }
         self.location = locationManager.rx.didUpdateLocations
-            .asDriver(onErrorJustReturn: [])
+            .asDriver(onErrorRecover: { error in
+                if CLLocationManager.authorizationStatus() != .authorizedWhenInUse {
+                    AlertController.show(with: LocationError.status.localizedDescription,
+                                         actions: [AlertAction.settings.default, AlertAction.cancel.default])
+                }
+                print(error)
+                return Driver.just([])
+            })
             .flatMap {
-                return $0.last.map(Driver.just) ?? Driver.empty()
+                return $0.last.map(Driver.just) ?? Driver.just(CLLocation(latitude: 0, longitude: 0))
             }
             .map { Location(with: $0) }
         setup(locationManager)

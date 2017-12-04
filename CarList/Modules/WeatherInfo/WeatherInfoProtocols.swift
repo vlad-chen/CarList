@@ -17,6 +17,7 @@ protocol WeatherInfoProvider {
 protocol LocationProvider {
     var authorized: Driver<Bool> {get}
     var location: Driver<Location> {get}
+    var isAuthorized: Bool {get}
 }
 
 protocol WeatherInfoCoordinator {

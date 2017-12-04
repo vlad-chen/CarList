@@ -624,7 +624,7 @@ struct R: Rswift.Validatable {
       fileprivate init() {}
     }
     
-    /// This `R.string.localizable` struct is generated, and contains static references to 23 localization keys.
+    /// This `R.string.localizable` struct is generated, and contains static references to 24 localization keys.
     struct localizable {
       /// Base translation: Add car
       /// 
@@ -682,6 +682,10 @@ struct R: Rswift.Validatable {
       /// 
       /// Locales: Base, ru
       static let weatherError = Rswift.StringResource(key: "weather:error", tableName: "Localizable", bundle: R.hostingBundle, locales: ["Base", "ru"], comment: nil)
+      /// Base translation: Please allow location tracking in settings
+      /// 
+      /// Locales: Base, ru
+      static let errorLocationStatus = Rswift.StringResource(key: "error.location.status", tableName: "Localizable", bundle: R.hostingBundle, locales: ["Base", "ru"], comment: nil)
       /// Base translation: Price:
       /// 
       /// Locales: Base, ru
@@ -815,6 +819,13 @@ struct R: Rswift.Validatable {
       /// Locales: Base, ru
       static func weatherError(_: Void = ()) -> String {
         return NSLocalizedString("weather:error", bundle: R.hostingBundle, value: "Not determined", comment: "")
+      }
+      
+      /// Base translation: Please allow location tracking in settings
+      /// 
+      /// Locales: Base, ru
+      static func errorLocationStatus(_: Void = ()) -> String {
+        return NSLocalizedString("error.location.status", bundle: R.hostingBundle, value: "Please allow location tracking in settings", comment: "")
       }
       
       /// Base translation: Price:

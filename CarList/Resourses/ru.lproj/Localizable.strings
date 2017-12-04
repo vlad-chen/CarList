@@ -42,3 +42,6 @@
 "car:details:transmission" = "Коробка передач:";
 "car:details:condition" = "Состояние:";
 "car:details:description" = "Описание:";
+
+//MARK: - Errors -
+"error.location.status" = "Пожалуйста разрешите использовать локацию в настройках приложения";
