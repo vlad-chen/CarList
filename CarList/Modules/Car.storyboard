@@ -8,6 +8,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Heavy.otf">
+            <string>SFProText-Heavy</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Navigation Controller-->
         <scene sceneID="r6q-vd-gW5">
@@ -85,7 +90,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="re5-vv-8MT">
-                                <rect key="frame" x="139" y="64.5" width="98.5" height="72.5"/>
+                                <rect key="frame" x="139" y="64.5" width="98.5" height="72"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+15" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vwi-GR-1Jf">
                                         <rect key="frame" x="0.0" y="0.0" width="98.5" height="31.5"/>
@@ -99,9 +104,9 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Киев" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3O9-ed-gWx">
-                                        <rect key="frame" x="0.0" y="52" width="98.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3O9-ed-gWx">
+                                        <rect key="frame" x="0.0" y="52" width="98.5" height="20"/>
+                                        <fontDescription key="fontDescription" name="SFProText-Heavy" family="SF Pro Text" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -120,6 +125,11 @@
                         <viewLayoutGuide key="safeArea" id="nP5-p1-heY"/>
                     </view>
                     <size key="freeformSize" width="375" height="200"/>
+                    <connections>
+                        <outlet property="cityLabel" destination="3O9-ed-gWx" id="pBm-bc-7Sc"/>
+                        <outlet property="descriptionLabel" destination="ahh-UY-q3h" id="xbv-zh-1ZR"/>
+                        <outlet property="temperatureLabel" destination="vwi-GR-1Jf" id="V9b-4e-Gzg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eIq-Ql-Tr7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

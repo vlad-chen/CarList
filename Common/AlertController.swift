@@ -6,14 +6,6 @@
 import Foundation
 import UIKit
 
-extension UIAlertController {
-    public func addActions(_ actions: [UIAlertAction]) {
-        for action in actions {
-            self.addAction(action)
-        }
-    }
-}
-
 class AlertController {
     
     public class func show(with message: String,
@@ -94,4 +86,12 @@ public enum AlertAction {
         return { _ in application.open(url) }
     }
     
+}
+
+fileprivate extension UIAlertController {
+    func addActions(_ actions: [UIAlertAction]) {
+        for action in actions {
+            self.addAction(action)
+        }
+    }
 }

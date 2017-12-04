@@ -6,3 +6,39 @@
   Copyright © 2017 Vlad Che. All rights reserved.
 */
 
+// MARK: - Car list -
+"car:list:title" = "Машины";
+"car:list:model" = "Модель:";
+"car:list:price" = "Цена:";
+"car:list:delete" = "Удалить";
+
+// MARK: - Weather conditions -
+"weather:clear:sky" = "Ясно";
+"weather:few:clouds" = "Понятно";
+"weather:scattered:clouds" = "Рассеяные облака";
+"weather:broken:clouds" = "Рваные облака";
+"weather:shower:rain" = "Ливень";
+"weather:rain" = "Дождь";
+"weather:thunderstorm" = "Гроза";
+"weather:snow" = "Снег";
+"weather:mist" = "Туман";
+"weather:lang" = "ru";
+"weather:error" = "Ошибка";
+
+//MARK: - Car Details -
+"car:details:title" = "Детали";
+"car:details:model" = "Модель:";
+"car:details:price" = "Цена:";
+"car:details:engine" = "Движок:";
+"car:details:transmission" = "Коробка передач:";
+"car:details:condition" = "Состояние:";
+"car:details:description" = "Описание:";
+
+//MARK: - Car Add -
+"car:details:action" = "Добавить";
+"car:details:model" = "Модель:";
+"car:details:price" = "Цена:";
+"car:details:engine" = "Движок:";
+"car:details:transmission" = "Коробка передач:";
+"car:details:condition" = "Состояние:";
+"car:details:description" = "Описание:";

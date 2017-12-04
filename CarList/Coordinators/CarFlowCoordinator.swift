@@ -67,8 +67,8 @@ extension CarFlowCoordinator: CarListCoordinator {
             else { fatalError("Can't initialize weather info view controller") }
         guard let carListViewController = carListViewController
             else { fatalError("Can't find car list view controller") }
-        let service = WeatherService()
-        buildModule(with: weatherInfoViewController, provider: service)
+        let model = WeatherInfoModel(with: WeatherService(), locationProvider: LocationService())
+        buildModule(with: weatherInfoViewController, model: model)
         move(weatherInfoViewController, to: carListViewController, in: view)
     }
     

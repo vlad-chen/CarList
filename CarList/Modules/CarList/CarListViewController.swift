@@ -30,5 +30,7 @@ class CarListViewController: View<CarListViewModel, CarListCoordinator> {
     }
     
     // MARK: - Private -
-    
+    private func configureInterface() {
+        self.title = R.string.localizable.carListTitle()
+    }
 }

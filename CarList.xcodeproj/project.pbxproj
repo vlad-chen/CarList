@@ -13,6 +13,9 @@
 		7777FA20DBFEFA7431FF730D /* Pods_CarListTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6584FDF1194BE57A57CCF285 /* Pods_CarListTests.framework */; };
 		7AFCDB786C3205F1534BD45F /* CarDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8457DFCC1DC032C283BFA843 /* CarDetailsViewModel.swift */; };
 		C4DC4CF537370445A318AC6E /* CarDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B2FFDA2A7DC9BF6FF67291 /* CarDetailsModel.swift */; };
+		DA3B67651FD42B4B00C54733 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B67641FD42B4B00C54733 /* Car.swift */; };
+		DA3B67671FD42BA300C54733 /* CarDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B67661FD42BA300C54733 /* CarDetails.swift */; };
+		DA3B67691FD47D9D00C54733 /* WeatherTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B67681FD47D9D00C54733 /* WeatherTarget.swift */; };
 		DA4D1CB01FCB231C00000418 /* SkyWellProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4D1CAF1FCB231C00000418 /* SkyWellProjectTests.swift */; };
 		DA4D1CBB1FCB231C00000418 /* SkyWellProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4D1CBA1FCB231C00000418 /* SkyWellProjectUITests.swift */; };
 		DA727E621FD0706200C896E4 /* WeatherInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA727E611FD0706200C896E4 /* WeatherInfoViewController.swift */; };
@@ -70,11 +73,15 @@
 		DA727EDC1FD3740500C896E4 /* CarAddViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA727ED81FD3740400C896E4 /* CarAddViewModel.swift */; };
 		DA727EDE1FD374FE00C896E4 /* CarAddService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA727EDD1FD374FE00C896E4 /* CarAddService.swift */; };
 		DA727EE01FD3750B00C896E4 /* CarDetailsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA727EDF1FD3750B00C896E4 /* CarDetailsService.swift */; };
+		DAA1B8141FD54E6300442ED8 /* CLLocationManager+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA1B8131FD54E6300442ED8 /* CLLocationManager+Rx.swift */; };
+		DAA1B8181FD54F8200442ED8 /* RxImagePickerDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA1B8151FD54F8100442ED8 /* RxImagePickerDelegateProxy.swift */; };
+		DAA1B8191FD54F8200442ED8 /* UIImagePickerController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA1B8161FD54F8100442ED8 /* UIImagePickerController+Rx.swift */; };
+		DAA1B81A1FD54F8200442ED8 /* RxCLLocationManagerDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA1B8171FD54F8100442ED8 /* RxCLLocationManagerDelegateProxy.swift */; };
 		DAE7BE481FD0590600479BB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7BE211FD0590500479BB2 /* AppDelegate.swift */; };
 		DAE7BE4A1FD0590600479BB2 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7BE241FD0590600479BB2 /* AlertController.swift */; };
 		DAE7BE4C1FD0590600479BB2 /* UIColor+AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7BE261FD0590600479BB2 /* UIColor+AppColors.swift */; };
 		DAE7BE4D1FD0590600479BB2 /* URL+Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7BE271FD0590600479BB2 /* URL+Query.swift */; };
-		DAE7BE4E1FD0590600479BB2 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7BE2E1FD0590600479BB2 /* NetworkManager.swift */; };
+		DAE7BE4E1FD0590600479BB2 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7BE2E1FD0590600479BB2 /* Networking.swift */; };
 		DAE7BE501FD0590600479BB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAE7BE311FD0590600479BB2 /* Assets.xcassets */; };
 		DAE7BE511FD0590600479BB2 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DAE7BE321FD0590600479BB2 /* Info.plist */; };
 		DAE7BE521FD0590600479BB2 /* CarListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7BE351FD0590600479BB2 /* CarListViewModel.swift */; };
@@ -113,6 +120,9 @@
 		89B2FFDA2A7DC9BF6FF67291 /* CarDetailsModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarDetailsModel.swift; sourceTree = "<group>"; };
 		B0F0338214B8A377C0F817E0 /* Pods-CarList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarList.release.xcconfig"; path = "Pods/Target Support Files/Pods-CarList/Pods-CarList.release.xcconfig"; sourceTree = "<group>"; };
 		BA6492ADF9643BCA9E514C81 /* Pods-CarListTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarListTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CarListTests/Pods-CarListTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DA3B67641FD42B4B00C54733 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		DA3B67661FD42BA300C54733 /* CarDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetails.swift; sourceTree = "<group>"; };
+		DA3B67681FD47D9D00C54733 /* WeatherTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTarget.swift; sourceTree = "<group>"; };
 		DA4D1C971FCB231C00000418 /* CarList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA4D1CAB1FCB231C00000418 /* CarListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA4D1CAF1FCB231C00000418 /* SkyWellProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyWellProjectTests.swift; sourceTree = "<group>"; };
@@ -177,11 +187,15 @@
 		DA727ED81FD3740400C896E4 /* CarAddViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarAddViewModel.swift; sourceTree = "<group>"; };
 		DA727EDD1FD374FE00C896E4 /* CarAddService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarAddService.swift; sourceTree = "<group>"; };
 		DA727EDF1FD3750B00C896E4 /* CarDetailsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailsService.swift; sourceTree = "<group>"; };
+		DAA1B8131FD54E6300442ED8 /* CLLocationManager+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLLocationManager+Rx.swift"; sourceTree = "<group>"; };
+		DAA1B8151FD54F8100442ED8 /* RxImagePickerDelegateProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxImagePickerDelegateProxy.swift; sourceTree = "<group>"; };
+		DAA1B8161FD54F8100442ED8 /* UIImagePickerController+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImagePickerController+Rx.swift"; sourceTree = "<group>"; };
+		DAA1B8171FD54F8100442ED8 /* RxCLLocationManagerDelegateProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxCLLocationManagerDelegateProxy.swift; sourceTree = "<group>"; };
 		DAE7BE211FD0590500479BB2 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAE7BE241FD0590600479BB2 /* AlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
 		DAE7BE261FD0590600479BB2 /* UIColor+AppColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+AppColors.swift"; sourceTree = "<group>"; };
 		DAE7BE271FD0590600479BB2 /* URL+Query.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+Query.swift"; sourceTree = "<group>"; };
-		DAE7BE2E1FD0590600479BB2 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		DAE7BE2E1FD0590600479BB2 /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		DAE7BE311FD0590600479BB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAE7BE321FD0590600479BB2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAE7BE351FD0590600479BB2 /* CarListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarListViewModel.swift; sourceTree = "<group>"; };
@@ -245,8 +259,7 @@
 				DAE7BE201FD0590500479BB2 /* Application */,
 				DAE7BE441FD0590600479BB2 /* Coordinators */,
 				DA727EAD1FD1823500C896E4 /* Common */,
-				DAE7BE331FD0590600479BB2 /* UI */,
-				DAE7BE281FD0590600479BB2 /* Services */,
+				DAE7BE331FD0590600479BB2 /* Modules */,
 				DAE7BE2D1FD0590600479BB2 /* Networking */,
 				DAE7BE471FD0590600479BB2 /* CoreData */,
 				DAE7BE431FD0590600479BB2 /* Entities */,
@@ -358,6 +371,10 @@
 		DAE7BE221FD0590500479BB2 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				DAA1B8151FD54F8100442ED8 /* RxImagePickerDelegateProxy.swift */,
+				DAA1B8171FD54F8100442ED8 /* RxCLLocationManagerDelegateProxy.swift */,
+				DAA1B8161FD54F8100442ED8 /* UIImagePickerController+Rx.swift */,
+				DAA1B8131FD54E6300442ED8 /* CLLocationManager+Rx.swift */,
 				DAE7BE261FD0590600479BB2 /* UIColor+AppColors.swift */,
 				DAE7BE271FD0590600479BB2 /* URL+Query.swift */,
 			);
@@ -365,23 +382,11 @@
 			path = CarList/Extensions;
 			sourceTree = "<group>";
 		};
-		DAE7BE281FD0590600479BB2 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				DA727EA51FD162A100C896E4 /* CarListService.swift */,
-				DA727EB61FD1969B00C896E4 /* WeatherService.swift */,
-				DA727EB81FD197F700C896E4 /* LocationService.swift */,
-				DA727EDD1FD374FE00C896E4 /* CarAddService.swift */,
-				DA727EDF1FD3750B00C896E4 /* CarDetailsService.swift */,
-			);
-			name = Services;
-			path = CarList/Services;
-			sourceTree = "<group>";
-		};
 		DAE7BE2D1FD0590600479BB2 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				DAE7BE2E1FD0590600479BB2 /* NetworkManager.swift */,
+				DAE7BE2E1FD0590600479BB2 /* Networking.swift */,
+				DA3B67681FD47D9D00C54733 /* WeatherTarget.swift */,
 			);
 			name = Networking;
 			path = CarList/Networking;
@@ -401,7 +406,7 @@
 			path = CarList/Resourses;
 			sourceTree = "<group>";
 		};
-		DAE7BE331FD0590600479BB2 /* UI */ = {
+		DAE7BE331FD0590600479BB2 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
 				DAE7BE411FD0590600479BB2 /* Car.storyboard */,
@@ -411,13 +416,14 @@
 				DAE7BE401FD0590600479BB2 /* CarDetails */,
 				DAE7BE391FD0590600479BB2 /* Common UI */,
 			);
-			name = UI;
-			path = CarList/UI;
+			name = Modules;
+			path = CarList/Modules;
 			sourceTree = "<group>";
 		};
 		DAE7BE341FD0590600479BB2 /* CarList */ = {
 			isa = PBXGroup;
 			children = (
+				DA727EA51FD162A100C896E4 /* CarListService.swift */,
 				DAE7BE371FD0590600479BB2 /* CarListModel.swift */,
 				DAE7BE361FD0590600479BB2 /* CarListViewController.swift */,
 				DAE7BE351FD0590600479BB2 /* CarListViewModel.swift */,
@@ -429,6 +435,7 @@
 		DAE7BE381FD0590600479BB2 /* CarAdd */ = {
 			isa = PBXGroup;
 			children = (
+				DA727EDD1FD374FE00C896E4 /* CarAddService.swift */,
 				DA727ED71FD3740400C896E4 /* CarAddModel.swift */,
 				DA727ED51FD3740400C896E4 /* CarAddProtocols.swift */,
 				DA727ED61FD3740400C896E4 /* CarAddViewController.swift */,
@@ -489,6 +496,8 @@
 		DAE7BE3F1FD0590600479BB2 /* WeatherInfo */ = {
 			isa = PBXGroup;
 			children = (
+				DA727EB61FD1969B00C896E4 /* WeatherService.swift */,
+				DA727EB81FD197F700C896E4 /* LocationService.swift */,
 				DA727EB21FD194FF00C896E4 /* WeatherInfoModel.swift */,
 				DA727E611FD0706200C896E4 /* WeatherInfoViewController.swift */,
 				DA727EB01FD194E400C896E4 /* WeatherInfoViewModel.swift */,
@@ -500,6 +509,7 @@
 		DAE7BE401FD0590600479BB2 /* CarDetails */ = {
 			isa = PBXGroup;
 			children = (
+				DA727EDF1FD3750B00C896E4 /* CarDetailsService.swift */,
 				89B2FFDA2A7DC9BF6FF67291 /* CarDetailsModel.swift */,
 				0E7AC8DB4E72D9593368E9A5 /* CarDetailsViewController.swift */,
 				8457DFCC1DC032C283BFA843 /* CarDetailsViewModel.swift */,
@@ -512,6 +522,8 @@
 			isa = PBXGroup;
 			children = (
 				DA727EBA1FD1B3B200C896E4 /* WeatherInfo.swift */,
+				DA3B67641FD42B4B00C54733 /* Car.swift */,
+				DA3B67661FD42BA300C54733 /* CarDetails.swift */,
 			);
 			name = Entities;
 			path = CarList/Entities;
@@ -611,6 +623,11 @@
 					DA4D1C961FCB231C00000418 = {
 						CreatedOnToolsVersion = 8.3.3;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					DA4D1CAA1FCB231C00000418 = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -858,6 +875,8 @@
 				DA727ED91FD3740500C896E4 /* CarAddProtocols.swift in Sources */,
 				DA727EDE1FD374FE00C896E4 /* CarAddService.swift in Sources */,
 				DA727EB51FD1953000C896E4 /* WeatherInfoProtocols.swift in Sources */,
+				DAA1B81A1FD54F8200442ED8 /* RxCLLocationManagerDelegateProxy.swift in Sources */,
+				DAA1B8181FD54F8200442ED8 /* RxImagePickerDelegateProxy.swift in Sources */,
 				DA727EE01FD3750B00C896E4 /* CarDetailsService.swift in Sources */,
 				DAE7BE541FD0590600479BB2 /* CarListModel.swift in Sources */,
 				DA727EDC1FD3740500C896E4 /* CarAddViewModel.swift in Sources */,
@@ -869,19 +888,23 @@
 				DA727EDB1FD3740500C896E4 /* CarAddModel.swift in Sources */,
 				DA727EB11FD194E400C896E4 /* WeatherInfoViewModel.swift in Sources */,
 				DA727ED21FD35F5F00C896E4 /* Coordinator.swift in Sources */,
-				DAE7BE4E1FD0590600479BB2 /* NetworkManager.swift in Sources */,
+				DAE7BE4E1FD0590600479BB2 /* Networking.swift in Sources */,
 				DA727EDA1FD3740500C896E4 /* CarAddViewController.swift in Sources */,
 				DA727EAF1FD1825100C896E4 /* BaseClasses.swift in Sources */,
 				DA727EB91FD197F700C896E4 /* LocationService.swift in Sources */,
 				DAE7BE571FD0590600479BB2 /* CarFlowCoordinator.swift in Sources */,
 				DAE7BE531FD0590600479BB2 /* CarListViewController.swift in Sources */,
 				DAE7BE481FD0590600479BB2 /* AppDelegate.swift in Sources */,
+				DA3B67691FD47D9D00C54733 /* WeatherTarget.swift in Sources */,
 				DAE7BE4D1FD0590600479BB2 /* URL+Query.swift in Sources */,
 				DA727E621FD0706200C896E4 /* WeatherInfoViewController.swift in Sources */,
+				DA3B67671FD42BA300C54733 /* CarDetails.swift in Sources */,
 				DA727EA41FD15C7600C896E4 /* R.generated.swift in Sources */,
 				DA727EBE1FD2A3A400C896E4 /* CarListCell.swift in Sources */,
 				DA727EB31FD194FF00C896E4 /* WeatherInfoModel.swift in Sources */,
 				DAE7BE561FD0590600479BB2 /* AppFlowCoordinator.swift in Sources */,
+				DAA1B8191FD54F8200442ED8 /* UIImagePickerController+Rx.swift in Sources */,
+				DA3B67651FD42B4B00C54733 /* Car.swift in Sources */,
 				DAE7BE521FD0590600479BB2 /* CarListViewModel.swift in Sources */,
 				DA727ED41FD3604B00C896E4 /* Builder.swift in Sources */,
 				DA727EC31FD2B04800C896E4 /* Font.swift in Sources */,
@@ -889,6 +912,7 @@
 				DA727EBB1FD1B3B200C896E4 /* WeatherInfo.swift in Sources */,
 				C4DC4CF537370445A318AC6E /* CarDetailsModel.swift in Sources */,
 				2EE9469B8DC077FFDCFC2317 /* CarDetailsViewController.swift in Sources */,
+				DAA1B8141FD54E6300442ED8 /* CLLocationManager+Rx.swift in Sources */,
 				7AFCDB786C3205F1534BD45F /* CarDetailsViewModel.swift in Sources */,
 				3D4B722F127B80288B70FDFB /* CarDetailsProtocols.swift in Sources */,
 			);

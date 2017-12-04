@@ -13,3 +13,9 @@ class {{ module_info.name }}ViewModel: ViewModel<{{ module_info.name }}Model> {
     // MARK: - Private -
     
 }
+
+extension {{ module_info.name }}ViewModel: ReactiveViewModel {
+    func subscribeOnModelChanges() {
+        
+    }
+}

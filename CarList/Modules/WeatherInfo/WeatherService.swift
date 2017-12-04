@@ -7,12 +7,16 @@
 //
 
 import Foundation
+import Moya
+import RxSwift
 
 extension WeatherService: WeatherInfoProvider {
-    
+    func getWeather(for location: Location) -> Single<WeatherInfo> {
+        return provider.rx.request(WeatherTarget(location: location))
+    }
 }
 
 class WeatherService {
     // MARK: - Private -
-    private let apiKey = "09d11b929c40b48115681561095b36c9"
+    fileprivate let provider = MoyaProvider<WeatherTarget>.default
 }

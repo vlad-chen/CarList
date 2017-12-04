@@ -5,3 +5,40 @@
   Created by Vlad Che on 12/2/17.
   Copyright © 2017 Vlad Che. All rights reserved.
 */
+
+// MARK: - Car list -
+"car:list:title" = "Car list";
+"car:list:model" = "Car:";
+"car:list:price" = "Price:";
+"car:list:delete" = "Delete";
+
+// MARK: - Weather conditions -
+"weather:clear:sky" = "Clear sky";
+"weather:few:clouds" = "Few clouds";
+"weather:scattered:clouds" = "Scattered clouds";
+"weather:broken:clouds" = "Broken clouds";
+"weather:shower:rain" = "Shower rain";
+"weather:rain" = "Rain";
+"weather:thunderstorm" = "Thunderstorm";
+"weather:snow" = "Snow";
+"weather:mist" = "Mist";
+"weather:lang" = "en";
+"weather:error" = "Not determined";
+
+//MARK: - Car Details -
+"car:details:title" = "Car details";
+"car:details:model" = "Car:";
+"car:details:price" = "Price:";
+"car:details:engine" = "Engine:";
+"car:details:transmission" = "Transmission:";
+"car:details:condition" = "Condition:";
+"car:details:description" = "Description:";
+
+//MARK: - Car Add -
+"car:details:action" = "Add car";
+"car:details:model" = "Car:";
+"car:details:price" = "Price:";
+"car:details:engine" = "Engine:";
+"car:details:transmission" = "Transmission:";
+"car:details:condition" = "Condition:";
+"car:details:description" = "Description:";

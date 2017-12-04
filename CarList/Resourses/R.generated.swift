@@ -624,8 +624,262 @@ struct R: Rswift.Validatable {
       fileprivate init() {}
     }
     
-    /// This `R.string.localizable` struct is generated, and contains static references to 0 localization keys.
+    /// This `R.string.localizable` struct is generated, and contains static references to 23 localization keys.
     struct localizable {
+      /// Base translation: Add car
+      /// 
+      /// Locales: Base, ru
+      static let carDetailsAction = Rswift.StringResource(key: "car:details:action", tableName: "Localizable", bundle: R.hostingBundle, locales: ["Base", "ru"], comment: nil)
+      /// Base translation: Broken clouds
+      /// 
+      /// Locales: Base, ru
+      static let weatherBrokenClouds = Rswift.StringResource(key: "weather:broken:clouds", tableName: "Localizable", bundle: R.hostingBundle, locales: ["Base", "ru"], comment: nil)
+      /// Base translation: Car details
+      /// 
+      /// Locales: Base, ru
+      static let carDetailsTitle = Rswift.StringResource(key: "car:details:title", tableName: "Localizable", bundle: R.hostingBundle, locales: ["Base", "ru"], comment: nil)
+      /// Base translation: Car list
+      /// 
+      /// Locales: Base, ru
+      static let carListTitle = Rswift.StringResource(key: "car:list:title", tableName: "Localizable", bundle: R.hostingBundle, locales: ["Base", "ru"], comment: nil)
+      /// Base translation: Car:
+      /// 
+      /// Locales: Base, ru
+      static let carDetailsModel = Rswift.StringResource(key: "car:details:model", tableName: "Localizable", bundle: R.hostingBundle, locales: ["Base", "ru"], comment: nil)
+      /// Base translation: Car:
+      /// 
+      /// Locales: Base, ru
+      static let carListModel = Rswift.StringResource(key: "car:list:model", tableName: "Localizable", bundle: R.hostingBundle, locales: ["Base", "ru"], comment: nil)
+      /// Base translation: Clear sky
+      /// 
+      /// Locales: Base, ru
+      static let weatherClearSky = Rswift.StringResource(key: "weather:clear:sky", tableName: "Localizable", bundle: R.hostingBundle, locales: ["Base", "ru"], comment: nil)
+      /// Base translation: Condition:
+      /// 
+      /// Locales: Base, ru
+      static let carDetailsCondition = Rswift.StringResource(key: "car:details:condition", tableName: "Localizable", bundle: R.hostingBundle, locales: ["Base", "ru"], comment: nil)
+      /// Base translation: Delete
+      /// 
+      /// Locales: Base, ru
+      static let carListDelete = Rswift.StringResource(key: "car:list:delete", tableName: "Localizable", bundle: R.hostingBundle, locales: ["Base", "ru"], comment: nil)
+      /// Base translation: Description:
+      /// 
+      /// Locales: Base, ru
+      static let carDetailsDescription = Rswift.StringResource(key: "car:details:description", tableName: "Localizable", bundle: R.hostingBundle, locales: ["Base", "ru"], comment: nil)
+      /// Base translation: Engine:
+      /// 
+      /// Locales: Base, ru
+      static let carDetailsEngine = Rswift.StringResource(key: "car:details:engine", tableName: "Localizable", bundle: R.hostingBundle, locales: ["Base", "ru"], comment: nil)
+      /// Base translation: Few clouds
+      /// 
+      /// Locales: Base, ru
+      static let weatherFewClouds = Rswift.StringResource(key: "weather:few:clouds", tableName: "Localizable", bundle: R.hostingBundle, locales: ["Base", "ru"], comment: nil)
+      /// Base translation: Mist
+      /// 
+      /// Locales: Base, ru
+      static let weatherMist = Rswift.StringResource(key: "weather:mist", tableName: "Localizable", bundle: R.hostingBundle, locales: ["Base", "ru"], comment: nil)
+      /// Base translation: Not determined
+      /// 
+      /// Locales: Base, ru
+      static let weatherError = Rswift.StringResource(key: "weather:error", tableName: "Localizable", bundle: R.hostingBundle, locales: ["Base", "ru"], comment: nil)
+      /// Base translation: Price:
+      /// 
+      /// Locales: Base, ru
+      static let carDetailsPrice = Rswift.StringResource(key: "car:details:price", tableName: "Localizable", bundle: R.hostingBundle, locales: ["Base", "ru"], comment: nil)
+      /// Base translation: Price:
+      /// 
+      /// Locales: Base, ru
+      static let carListPrice = Rswift.StringResource(key: "car:list:price", tableName: "Localizable", bundle: R.hostingBundle, locales: ["Base", "ru"], comment: nil)
+      /// Base translation: Rain
+      /// 
+      /// Locales: Base, ru
+      static let weatherRain = Rswift.StringResource(key: "weather:rain", tableName: "Localizable", bundle: R.hostingBundle, locales: ["Base", "ru"], comment: nil)
+      /// Base translation: Scattered clouds
+      /// 
+      /// Locales: Base, ru
+      static let weatherScatteredClouds = Rswift.StringResource(key: "weather:scattered:clouds", tableName: "Localizable", bundle: R.hostingBundle, locales: ["Base", "ru"], comment: nil)
+      /// Base translation: Shower rain
+      /// 
+      /// Locales: Base, ru
+      static let weatherShowerRain = Rswift.StringResource(key: "weather:shower:rain", tableName: "Localizable", bundle: R.hostingBundle, locales: ["Base", "ru"], comment: nil)
+      /// Base translation: Snow
+      /// 
+      /// Locales: Base, ru
+      static let weatherSnow = Rswift.StringResource(key: "weather:snow", tableName: "Localizable", bundle: R.hostingBundle, locales: ["Base", "ru"], comment: nil)
+      /// Base translation: Thunderstorm
+      /// 
+      /// Locales: Base, ru
+      static let weatherThunderstorm = Rswift.StringResource(key: "weather:thunderstorm", tableName: "Localizable", bundle: R.hostingBundle, locales: ["Base", "ru"], comment: nil)
+      /// Base translation: Transmission:
+      /// 
+      /// Locales: Base, ru
+      static let carDetailsTransmission = Rswift.StringResource(key: "car:details:transmission", tableName: "Localizable", bundle: R.hostingBundle, locales: ["Base", "ru"], comment: nil)
+      /// Base translation: en
+      /// 
+      /// Locales: Base, ru
+      static let weatherLang = Rswift.StringResource(key: "weather:lang", tableName: "Localizable", bundle: R.hostingBundle, locales: ["Base", "ru"], comment: nil)
+      
+      /// Base translation: Add car
+      /// 
+      /// Locales: Base, ru
+      static func carDetailsAction(_: Void = ()) -> String {
+        return NSLocalizedString("car:details:action", bundle: R.hostingBundle, value: "Add car", comment: "")
+      }
+      
+      /// Base translation: Broken clouds
+      /// 
+      /// Locales: Base, ru
+      static func weatherBrokenClouds(_: Void = ()) -> String {
+        return NSLocalizedString("weather:broken:clouds", bundle: R.hostingBundle, value: "Broken clouds", comment: "")
+      }
+      
+      /// Base translation: Car details
+      /// 
+      /// Locales: Base, ru
+      static func carDetailsTitle(_: Void = ()) -> String {
+        return NSLocalizedString("car:details:title", bundle: R.hostingBundle, value: "Car details", comment: "")
+      }
+      
+      /// Base translation: Car list
+      /// 
+      /// Locales: Base, ru
+      static func carListTitle(_: Void = ()) -> String {
+        return NSLocalizedString("car:list:title", bundle: R.hostingBundle, value: "Car list", comment: "")
+      }
+      
+      /// Base translation: Car:
+      /// 
+      /// Locales: Base, ru
+      static func carDetailsModel(_: Void = ()) -> String {
+        return NSLocalizedString("car:details:model", bundle: R.hostingBundle, value: "Car:", comment: "")
+      }
+      
+      /// Base translation: Car:
+      /// 
+      /// Locales: Base, ru
+      static func carListModel(_: Void = ()) -> String {
+        return NSLocalizedString("car:list:model", bundle: R.hostingBundle, value: "Car:", comment: "")
+      }
+      
+      /// Base translation: Clear sky
+      /// 
+      /// Locales: Base, ru
+      static func weatherClearSky(_: Void = ()) -> String {
+        return NSLocalizedString("weather:clear:sky", bundle: R.hostingBundle, value: "Clear sky", comment: "")
+      }
+      
+      /// Base translation: Condition:
+      /// 
+      /// Locales: Base, ru
+      static func carDetailsCondition(_: Void = ()) -> String {
+        return NSLocalizedString("car:details:condition", bundle: R.hostingBundle, value: "Condition:", comment: "")
+      }
+      
+      /// Base translation: Delete
+      /// 
+      /// Locales: Base, ru
+      static func carListDelete(_: Void = ()) -> String {
+        return NSLocalizedString("car:list:delete", bundle: R.hostingBundle, value: "Delete", comment: "")
+      }
+      
+      /// Base translation: Description:
+      /// 
+      /// Locales: Base, ru
+      static func carDetailsDescription(_: Void = ()) -> String {
+        return NSLocalizedString("car:details:description", bundle: R.hostingBundle, value: "Description:", comment: "")
+      }
+      
+      /// Base translation: Engine:
+      /// 
+      /// Locales: Base, ru
+      static func carDetailsEngine(_: Void = ()) -> String {
+        return NSLocalizedString("car:details:engine", bundle: R.hostingBundle, value: "Engine:", comment: "")
+      }
+      
+      /// Base translation: Few clouds
+      /// 
+      /// Locales: Base, ru
+      static func weatherFewClouds(_: Void = ()) -> String {
+        return NSLocalizedString("weather:few:clouds", bundle: R.hostingBundle, value: "Few clouds", comment: "")
+      }
+      
+      /// Base translation: Mist
+      /// 
+      /// Locales: Base, ru
+      static func weatherMist(_: Void = ()) -> String {
+        return NSLocalizedString("weather:mist", bundle: R.hostingBundle, value: "Mist", comment: "")
+      }
+      
+      /// Base translation: Not determined
+      /// 
+      /// Locales: Base, ru
+      static func weatherError(_: Void = ()) -> String {
+        return NSLocalizedString("weather:error", bundle: R.hostingBundle, value: "Not determined", comment: "")
+      }
+      
+      /// Base translation: Price:
+      /// 
+      /// Locales: Base, ru
+      static func carDetailsPrice(_: Void = ()) -> String {
+        return NSLocalizedString("car:details:price", bundle: R.hostingBundle, value: "Price:", comment: "")
+      }
+      
+      /// Base translation: Price:
+      /// 
+      /// Locales: Base, ru
+      static func carListPrice(_: Void = ()) -> String {
+        return NSLocalizedString("car:list:price", bundle: R.hostingBundle, value: "Price:", comment: "")
+      }
+      
+      /// Base translation: Rain
+      /// 
+      /// Locales: Base, ru
+      static func weatherRain(_: Void = ()) -> String {
+        return NSLocalizedString("weather:rain", bundle: R.hostingBundle, value: "Rain", comment: "")
+      }
+      
+      /// Base translation: Scattered clouds
+      /// 
+      /// Locales: Base, ru
+      static func weatherScatteredClouds(_: Void = ()) -> String {
+        return NSLocalizedString("weather:scattered:clouds", bundle: R.hostingBundle, value: "Scattered clouds", comment: "")
+      }
+      
+      /// Base translation: Shower rain
+      /// 
+      /// Locales: Base, ru
+      static func weatherShowerRain(_: Void = ()) -> String {
+        return NSLocalizedString("weather:shower:rain", bundle: R.hostingBundle, value: "Shower rain", comment: "")
+      }
+      
+      /// Base translation: Snow
+      /// 
+      /// Locales: Base, ru
+      static func weatherSnow(_: Void = ()) -> String {
+        return NSLocalizedString("weather:snow", bundle: R.hostingBundle, value: "Snow", comment: "")
+      }
+      
+      /// Base translation: Thunderstorm
+      /// 
+      /// Locales: Base, ru
+      static func weatherThunderstorm(_: Void = ()) -> String {
+        return NSLocalizedString("weather:thunderstorm", bundle: R.hostingBundle, value: "Thunderstorm", comment: "")
+      }
+      
+      /// Base translation: Transmission:
+      /// 
+      /// Locales: Base, ru
+      static func carDetailsTransmission(_: Void = ()) -> String {
+        return NSLocalizedString("car:details:transmission", bundle: R.hostingBundle, value: "Transmission:", comment: "")
+      }
+      
+      /// Base translation: en
+      /// 
+      /// Locales: Base, ru
+      static func weatherLang(_: Void = ()) -> String {
+        return NSLocalizedString("weather:lang", bundle: R.hostingBundle, value: "en", comment: "")
+      }
+      
       fileprivate init() {}
     }
     

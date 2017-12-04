@@ -48,11 +48,11 @@ extension ChildViewControllersCoordinator {
                           animations: {
                             new.view.frame = old.view.frame
                             old.view.frame = oldViewEndFrame
-        },
+                          },
                           completion: { finished in
                             old.removeFromParentViewController()
                             new.didMove(toParentViewController: parent)
-        })
+                          })
     }
     
 }
