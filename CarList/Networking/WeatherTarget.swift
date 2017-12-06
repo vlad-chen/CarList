@@ -29,6 +29,6 @@ extension WeatherTarget: Target {
     var sampleData: Data { return Data() }
     var task: Moya.Task { return .requestParameters(parameters: parameters, encoding: URLEncoding.queryString) }
     var headers: [String : String]? { return ["Content-type": "application/json"] }
-    var parameters: [String : Any] { return ["lat": location.latitude, "lon": location.longitude, "APPID": apiKey, "units": "metric", "lang": R.string.localizable.weatherLang()] }
+    var parameters: [String : Any] { return ["lat": location.latitude, "lon": location.longitude, "APPID": apiKey, "units": "metric", "lang": Localizable.weatherLang()] }
     
 }

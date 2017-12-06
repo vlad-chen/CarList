@@ -22,10 +22,10 @@ struct WeatherInfo {
         return WeatherInfo(latitude: 0,
                            longitude: 0,
                            condition: .clear,
-                           description: R.string.localizable.weatherError(),
+                           description: Localizable.weatherError(),
                            icon: "11d",
                            temperature: 0,
-                           city: R.string.localizable.weatherError())
+                           city: Localizable.weatherError())
     }
     
     enum Condition: String, UnboxableEnum {
@@ -41,15 +41,15 @@ struct WeatherInfo {
         
         var description: String {
             switch self {
-            case .clear: return R.string.localizable.weatherClearSky()
-            case .few: return R.string.localizable.weatherFewClouds()
-            case .scattered: return R.string.localizable.weatherScatteredClouds()
-            case .broken: return R.string.localizable.weatherBrokenClouds()
-            case .shower: return R.string.localizable.weatherShowerRain()
-            case .rain: return R.string.localizable.weatherRain()
-            case .thunderstorm: return R.string.localizable.weatherThunderstorm()
-            case .snow: return R.string.localizable.weatherSnow()
-            case .mist: return R.string.localizable.weatherMist()
+            case .clear: return Localizable.weatherClearSky()
+            case .few: return Localizable.weatherFewClouds()
+            case .scattered: return Localizable.weatherScatteredClouds()
+            case .broken: return Localizable.weatherBrokenClouds()
+            case .shower: return Localizable.weatherShowerRain()
+            case .rain: return Localizable.weatherRain()
+            case .thunderstorm: return Localizable.weatherThunderstorm()
+            case .snow: return Localizable.weatherSnow()
+            case .mist: return Localizable.weatherMist()
             }
         }
     }

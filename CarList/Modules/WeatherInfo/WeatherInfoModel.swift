@@ -53,7 +53,6 @@ class WeatherInfoModel {
                     strongSelf.showStatusAlert()
                 } else {
                     print("Location authorized")
-//                    strongSelf.entity = strongSelf.getEntity()
                 }
             })
             .disposed(by: disposeBag)

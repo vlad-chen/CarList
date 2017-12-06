@@ -77,6 +77,8 @@
 		DAA1B8181FD54F8200442ED8 /* RxImagePickerDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA1B8151FD54F8100442ED8 /* RxImagePickerDelegateProxy.swift */; };
 		DAA1B8191FD54F8200442ED8 /* UIImagePickerController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA1B8161FD54F8100442ED8 /* UIImagePickerController+Rx.swift */; };
 		DAA1B81A1FD54F8200442ED8 /* RxCLLocationManagerDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA1B8171FD54F8100442ED8 /* RxCLLocationManagerDelegateProxy.swift */; };
+		DAA1B81C1FD5C6FE00442ED8 /* OfflineDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA1B81B1FD5C6FE00442ED8 /* OfflineDataStorage.swift */; };
+		DAA1B81E1FD745DD00442ED8 /* Aliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA1B81D1FD745DD00442ED8 /* Aliases.swift */; };
 		DAE7BE481FD0590600479BB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7BE211FD0590500479BB2 /* AppDelegate.swift */; };
 		DAE7BE4A1FD0590600479BB2 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7BE241FD0590600479BB2 /* AlertController.swift */; };
 		DAE7BE4C1FD0590600479BB2 /* UIColor+AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7BE261FD0590600479BB2 /* UIColor+AppColors.swift */; };
@@ -191,6 +193,8 @@
 		DAA1B8151FD54F8100442ED8 /* RxImagePickerDelegateProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxImagePickerDelegateProxy.swift; sourceTree = "<group>"; };
 		DAA1B8161FD54F8100442ED8 /* UIImagePickerController+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImagePickerController+Rx.swift"; sourceTree = "<group>"; };
 		DAA1B8171FD54F8100442ED8 /* RxCLLocationManagerDelegateProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxCLLocationManagerDelegateProxy.swift; sourceTree = "<group>"; };
+		DAA1B81B1FD5C6FE00442ED8 /* OfflineDataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineDataStorage.swift; sourceTree = "<group>"; };
+		DAA1B81D1FD745DD00442ED8 /* Aliases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aliases.swift; sourceTree = "<group>"; };
 		DAE7BE211FD0590500479BB2 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAE7BE241FD0590600479BB2 /* AlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
 		DAE7BE261FD0590600479BB2 /* UIColor+AppColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+AppColors.swift"; sourceTree = "<group>"; };
@@ -347,6 +351,7 @@
 				DAE7BE241FD0590600479BB2 /* AlertController.swift */,
 				DA727EC21FD2B04800C896E4 /* Font.swift */,
 				DA727EC01FD2B00300C896E4 /* Error.swift */,
+				DAA1B81D1FD745DD00442ED8 /* Aliases.swift */,
 			);
 			path = Common;
 			sourceTree = SOURCE_ROOT;
@@ -542,6 +547,7 @@
 		DAE7BE471FD0590600479BB2 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				DAA1B81B1FD5C6FE00442ED8 /* OfflineDataStorage.swift */,
 			);
 			name = CoreData;
 			path = CarList/CoreData;
@@ -877,6 +883,7 @@
 				DA727EB51FD1953000C896E4 /* WeatherInfoProtocols.swift in Sources */,
 				DAA1B81A1FD54F8200442ED8 /* RxCLLocationManagerDelegateProxy.swift in Sources */,
 				DAA1B8181FD54F8200442ED8 /* RxImagePickerDelegateProxy.swift in Sources */,
+				DAA1B81E1FD745DD00442ED8 /* Aliases.swift in Sources */,
 				DA727EE01FD3750B00C896E4 /* CarDetailsService.swift in Sources */,
 				DAE7BE541FD0590600479BB2 /* CarListModel.swift in Sources */,
 				DA727EDC1FD3740500C896E4 /* CarAddViewModel.swift in Sources */,
@@ -905,6 +912,7 @@
 				DAE7BE561FD0590600479BB2 /* AppFlowCoordinator.swift in Sources */,
 				DAA1B8191FD54F8200442ED8 /* UIImagePickerController+Rx.swift in Sources */,
 				DA3B67651FD42B4B00C54733 /* Car.swift in Sources */,
+				DAA1B81C1FD5C6FE00442ED8 /* OfflineDataStorage.swift in Sources */,
 				DAE7BE521FD0590600479BB2 /* CarListViewModel.swift in Sources */,
 				DA727ED41FD3604B00C896E4 /* Builder.swift in Sources */,
 				DA727EC31FD2B04800C896E4 /* Font.swift in Sources */,
@@ -1078,7 +1086,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = vlad.che.carlist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -1092,7 +1100,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = vlad.che.carlist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

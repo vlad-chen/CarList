@@ -82,7 +82,7 @@ public enum Font {
         }
     }
     
-    private func uiFontWeight(for weight: String) -> UIFontWeight {
+    private func uiFontWeight(for weight: String) -> UIFont.Weight {
         return (Font.Weight(rawValue: weight) ?? Font.Weight.medium).uiFontWeigth
     }
     
@@ -98,18 +98,18 @@ public enum Font {
         case thin = "Thin"
         case italic = "Italic"
         
-        var uiFontWeigth: UIFontWeight {
+        var uiFontWeigth: UIFont.Weight {
             switch self {
-            case .black: return UIFontWeightBlack
-            case .bold: return UIFontWeightBold
-            case .heavy: return UIFontWeightHeavy
-            case .light: return UIFontWeightLight
-            case .medium: return UIFontWeightMedium
-            case .regular: return UIFontWeightRegular
-            case .semibold: return UIFontWeightSemibold
-            case .ultralight: return UIFontWeightUltraLight
-            case .thin: return UIFontWeightThin
-            case .italic: return UIFontWeightMedium
+            case .black: return .black
+            case .bold: return .bold
+            case .heavy: return .heavy
+            case .light: return .light
+            case .medium: return .medium
+            case .regular: return .regular
+            case .semibold: return .semibold
+            case .ultralight: return .ultraLight
+            case .thin: return .thin
+            case .italic: return .medium
             }
         }
         

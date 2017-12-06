@@ -10,5 +10,8 @@ import UIKit
 import Reusable
 
 class CarListCell: UITableViewCell, NibReusable {
-    
+    // MARK: - IBOutlet -
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var priceLabel: UILabel!
+    @IBOutlet weak var photo: UIImageView!
 }

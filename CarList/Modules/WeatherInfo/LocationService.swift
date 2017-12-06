@@ -16,7 +16,7 @@ enum LocationError: Swift.Error {
     case status
     var localizedDescription: String {
         switch self {
-        case .status: return R.string.localizable.errorLocationStatus()
+        case .status: return Localizable.errorLocationStatus()
         }
     }
 }

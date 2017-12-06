@@ -21,6 +21,12 @@ class WeatherInfoViewController: View<WeatherInfoViewModel, WeatherInfoCoordinat
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        bindData()
+    }
+    
+    // MARK: - Private -
+    
+    private func bindData() {
         viewModel.representation
             .drive(Binder(self) { weakSelf, location in
                 weakSelf.temperatureLabel.text = location.temperature
@@ -29,5 +35,6 @@ class WeatherInfoViewController: View<WeatherInfoViewModel, WeatherInfoCoordinat
             })
             .disposed(by: disposeBag)
     }
+
     
 }

@@ -14,23 +14,23 @@ class WeatherInfoViewModel: ViewModel<WeatherInfoModel> {
     
     // MARK: - Public -
 
-    var representation: Driver<WeatherInfoRepresantation> {
+    var representation: Driver<WeatherInfoRepresentation> {
         return model.entity.map { self.representation(for: $0) }
     }
     
     // MARK: - Private -
-    func representation(for entity: WeatherInfo) -> WeatherInfoRepresantation {
+    func representation(for entity: WeatherInfo) -> WeatherInfoRepresentation {
         let temperatureString: String
         if entity.temperature > 0 { temperatureString = "+\(entity.temperature)"}
         else { temperatureString = "\(entity.temperature)"}
-        return WeatherInfoRepresantation(temperature: temperatureString,
+        return WeatherInfoRepresentation(temperature: temperatureString,
                                          description: entity.description,
                                          city: entity.city)
     }
 
 }
 
-struct WeatherInfoRepresantation {
+struct WeatherInfoRepresentation {
     let temperature: String
     let description: String
     let city: String
