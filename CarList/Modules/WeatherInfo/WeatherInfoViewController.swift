@@ -27,14 +27,20 @@ class WeatherInfoViewController: View<WeatherInfoViewModel, WeatherInfoCoordinat
     // MARK: - Private -
     
     private func bindData() {
-        viewModel.representation
-            .drive(Binder(self) { weakSelf, location in
-                weakSelf.temperatureLabel.text = location.temperature
-                weakSelf.descriptionLabel.text = location.description
-                weakSelf.cityLabel.text = location.city
+        viewModel.weather
+            .drive(Binder(self) { weakSelf, weather in
+                weakSelf.temperatureLabel.text = weather.temperature
+                weakSelf.descriptionLabel.text = weather.description
+                weakSelf.cityLabel.text = weather.city
             })
             .disposed(by: disposeBag)
     }
 
     
+}
+
+struct WeatherInfoRepresentation {
+    let temperature: String
+    let description: String
+    let city: String
 }

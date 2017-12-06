@@ -12,7 +12,7 @@ import RxCocoa
 
 class WeatherInfoModel {
     // MARK: - Public -
-    lazy var entity: Driver<WeatherInfo> = self.getEntity()
+    lazy var weather: Driver<WeatherInfo> = self.getWeather()
     
     // MARK: - Init -
     init(with weatherProvider: WeatherInfoProvider, locationProvider: LocationProvider) {
@@ -27,7 +27,7 @@ class WeatherInfoModel {
     private let locationProvider: LocationProvider
     private let disposeBag = DisposeBag()
     
-    private func getEntity() -> Driver<WeatherInfo> {
+    private func getWeather() -> Driver<WeatherInfo> {
         return locationProvider.location
             .distinctUntilChanged()
             .flatMapLatest({ [weak self] location in
@@ -38,6 +38,7 @@ class WeatherInfoModel {
                     return Driver<WeatherInfo>.just(WeatherInfo.none)
                 })
             })
+            .startWith(WeatherInfo.none)
     }
     
     private func showStatusAlert() {
